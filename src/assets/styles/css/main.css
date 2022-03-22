@@ -1,0 +1,109 @@
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Playfair Display", serif; */
+}
+/*-------------Navbar----------*/
+/*----------Table --------------*/
+
+.logo-decoration {
+  text-decoration-color: black;
+}
+.logo-style {
+  font-family: "Playfair Display", serif;
+}
+.underlined-p {
+  text-decoration: underline;
+  text-decoration-color: rgb(60, 128, 103);
+  text-underline-offset: 4.8px;
+  text-decoration-thickness: 1px;
+}
+/* Home  */
+
+.home-banner {
+  background-image: url("../../images/trasnport\ 1.png");
+  position: relative;
+  height: 478px;
+}
+
+.home-banner::after {
+  position: absolute;
+  background-image: url("../../images//Rectangle\ 1.png");
+  top: 0;
+  left: 0;
+  content: " ";
+  height: 478px;
+  width: 100%;
+}
+.ticketing-banner {
+  position: relative;
+  height: 478px;
+}
+.ticketing-banner::before {
+  position: absolute;
+  background: url("../../images/transport\ 2.png") no-repeat;
+  top: 0;
+  left: 0;
+  content: " ";
+  height: 478px;
+  width: 438px;
+}
+.ticketing-banner::after {
+  position: absolute;
+  background: url("../../images/go\ to\ 1.png") no-repeat;
+  top: 0;
+  right: 0;
+  content: " ";
+  height: 478px;
+
+  width: 408px;
+}
+.products .carousel-control-next {
+  width: 2rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: solid 2px rgb(197, 219, 245);
+  border-radius: 50%;
+  top: 40%;
+}
+.products .carousel-control-next-icon {
+  background-image: url("../../images//next-icon.png");
+  position: absolute;
+  /* top: 100%; */
+  margin-top: 20px;
+  width: 0.61rem;
+  height: 1rem;
+}
+.products .carousel-control-prev {
+  width: 2rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: solid 2px rgb(197, 219, 245);
+  border-radius: 50%;
+  top: 40%;
+}
+.products .carousel-control-prev-icon {
+  background-image: url("../../images//prev-icon.png");
+  position: absolute;
+  /* top: 100%; */
+  margin-top: 20px;
+  width: 0.61rem;
+  height: 1rem;
+}
+/* .products.carousel .carousel-indicators li {
+  margin: 0px 20px 20px 0px;
+  background-color: #fff;
+  background-color: rgba(19, 196, 228, 0.25);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.products .carousel .carousel-indicators .active {
+  background-color: rgb(21, 93, 228);
+}
+.products .carousel-indicators {
+  position: absolute;
+  top: 100%;
+  margin-top: 20px;
+} */
