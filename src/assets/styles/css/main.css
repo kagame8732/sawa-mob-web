@@ -121,3 +121,8 @@ body {
   border-style: solid;
   border-color: rgba(46, 139, 192, 1);
 }
+/* Sign up form */
+.signup .form-check-input:checked {
+  background-color: rgba(12, 45, 72, 1);
+  border-color: rgba(12, 45, 72, 1);
+}
