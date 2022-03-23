@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import driverImg from "../../assets/images/driver.png";
-import SignUp from "../../components/membership/SignUp";
+import SignUp from "../../components/auth/SignUp";
 function index() {
   return (
     <div className="py-10">

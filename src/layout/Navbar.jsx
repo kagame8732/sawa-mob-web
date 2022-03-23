@@ -95,19 +95,7 @@ function Navbar(props) {
           >
             Download App
           </button>
-          <NavLink
-            exact
-            to="/requestride"
-            className={
-              (location?.pathname === "/"
-                ? " hover:text-whitecolor  "
-                : " hover:text-darkergray  ") +
-              " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1 "
-            }
-            activeClassName=" border-opacity-100 border-blue-400"
-          >
-            Hire a ride
-          </NavLink>
+
           <Dropdown className="d-inline">
             <DropdownToggle
               variant=""
