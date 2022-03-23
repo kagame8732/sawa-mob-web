@@ -6,6 +6,8 @@ import About from "../pages/About";
 import Membership from "../pages/Membership";
 import RequestRide from "../pages/RequestRide";
 import PageNotFound from "../pages/PageNotFound";
+import BusRide from "../pages/RequestRide/BusRide";
+import BikeRide from "../pages/RequestRide/BikeRide";
 const routes = [
   {
     component: BlankLayout,
@@ -41,6 +43,18 @@ const routes = [
         path: "/requestride",
         exact: true,
         component: RequestRide,
+      },
+      {
+        name: "Request ride page",
+        path: "/bikeride",
+        exact: true,
+        component: BikeRide,
+      },
+      {
+        name: "Request ride page",
+        path: "/busride",
+        exact: true,
+        component: BusRide,
       },
       {
         name: "Page not found page",

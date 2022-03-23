@@ -33,6 +33,8 @@ module.exports = {
       lighterblue: "#17C9FB",
       lightdarkblue: "#145DA0",
       darkblue: "#0C2D48",
+      lightgray: "rgba(75, 89, 101, 1)",
+      darkergray: "rgba(10, 24, 35, 1)",
     },
     spacing: {
       px: "1px",
@@ -166,6 +168,7 @@ module.exports = {
     borderWidth: {
       DEFAULT: "1px",
       0: "0px",
+      1: "1px",
       2: "2px",
       4: "4px",
       8: "8px",
