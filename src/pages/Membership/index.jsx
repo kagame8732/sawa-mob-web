@@ -27,7 +27,7 @@ function index() {
           </div>
         </div>
       </div>
-      <div className="px-20 md:px-32 py-10 space-y-10">
+      <div className="px-10 sm:px-20 md:px-32 py-10 space-y-10">
         <div className=" space-y-3">
           <h5 className="text-darkergray font-bold text-xl text-center">
             How is it beneficial

@@ -454,7 +454,7 @@ function SignUp() {
           laborum elit nostrud elit.
         </p>
       </div>
-      <button className="align-self-center py-2 px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-sm">
+      <button className="align-self-center mx-10 py-2 px-20 lg:px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-sm">
         Complete Sign Up
       </button>
     </form>

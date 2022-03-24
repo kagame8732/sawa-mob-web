@@ -37,7 +37,7 @@ function RequestRideForm() {
         </label>
         <Form.Select
           id="vehicle-type"
-          className="text-xs border-0 py-3 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
+          className="text-xs border-0 ml-3 py-3 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
         >
           <option className="text-xs text-lightgray" selected>
             Vehicle Type
@@ -49,7 +49,7 @@ function RequestRideForm() {
             school bus
           </option>
           <option className="text-xs text-lightgray" value="white">
-            bus
+            bike
           </option>
         </Form.Select>
       </div>
@@ -91,12 +91,12 @@ function RequestRideForm() {
           name="contact"
           id="contact"
           autoComplete="location"
-          className="flex-1 appearance-none rounded-none relative block w-full px-3 py-3 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+          className="flex-1 appearance-none rounded-none relative block w-full px-6 py-3 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
           placeholder="Your contact
           "
         />
       </div>
-      <button className="text-sm bg-darkblue text-whitecolor hover:opacity-70 py-2 w-100">
+      <button className="text-sm bg-darkblue text-whitecolor hover:opacity-70 py-3 w-100">
         Request Ride
       </button>
     </form>

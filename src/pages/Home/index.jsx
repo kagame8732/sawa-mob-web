@@ -5,16 +5,15 @@ import searchImg from "../../assets/images/search-img.png";
 import tapGoCheckerImg from "../../assets/images/transport 2.png";
 import tapGoImg from "../../assets/images/go to 1.png";
 import phoneImg from "../../assets/images/phone.png";
-import tapgologoImg from "../../assets/images/TapGologo.png";
-import tapgologo2Img from "../../assets/images/TapGologo2.png";
-import shuriBusLogoImg from "../../assets/images/shuribusLogo.png";
+
 import { Carousel } from "react-bootstrap";
+import MobilepartsSlider from "../../components/sliders/MobilepartsSlider";
 function index() {
   return (
     <div>
       {" "}
       <div className="home-banner flex items-center ">
-        <div className=" w-2/5 py-40 px-20 text-white z-10">
+        <div className=" w-1/2 md:w-2/5 py-40 px-10 md:px-20 text-white z-10">
           <h2 className="text-4xl font-bold">
             Transportation Made Easy with one app
           </h2>
@@ -44,7 +43,10 @@ function index() {
             at low cost
           </p>
         </div>
-        <div className="grid grid-cols-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
+          <div className="  md:order-last">
+            <img src={mapImg} alst="map" />
+          </div>
           <div className="align-self-center">
             <h5 className="text-base font-bold text-gray-800">
               We Provide Simple
@@ -305,11 +307,8 @@ function index() {
               </li>
             </ul>
           </div>
-          <div className="">
-            <img src={mapImg} alst="map" />
-          </div>
         </div>
-        <div className="grid grid-cols-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className=" p-10">
             <img src={searchImg} alt="search preview" />
           </div>
@@ -351,62 +350,8 @@ function index() {
         <h5 className="text-gray-800 font-bold text-xl text-center">
           Our Incredible Mobility Parts
         </h5>
-        <Carousel indicators={true} interval={null}>
-          <Carousel.Item>
-            <div className="grid grid-cols-3 gap-3 px-20">
-              <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={tapgologoImg} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
-                  {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
-                </p>
-              </div>
-              <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={shuriBusLogoImg} alt="shuri bus logo" />
-                <p className="text-xs text-gray-500">
-                  {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
-                </p>
-              </div>
-              <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={tapgologo2Img} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
-                </p>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="grid grid-cols-3 gap-3 px-20">
-              <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={tapgologoImg} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
-                  {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
-                </p>
-              </div>
-              <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={shuriBusLogoImg} alt="shuri bus logo" />
-                <p className="text-xs text-gray-500">
-                  {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
-                </p>
-              </div>
-              <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={tapgologo2Img} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
-                </p>
-              </div>
-            </div>
-          </Carousel.Item>
-        </Carousel>
+
+        <MobilepartsSlider />
         <div className=" grid grid-cols-2 bg-lightdarkblue rounded-2xl ">
           <div className="m-10 text-white">
             <h5 className="font-bold  text-base mb-6">

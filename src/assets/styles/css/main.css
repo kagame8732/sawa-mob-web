@@ -126,3 +126,118 @@ body {
   background-color: rgba(12, 45, 72, 1);
   border-color: rgba(12, 45, 72, 1);
 }
+/* Bus */
+.bus-hero {
+  background: url("../../images//kbs\ bus.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 511px;
+}
+.bus-hero::before {
+  background-color: rgba(12, 45, 72, 0.92);
+  content: "";
+  display: block;
+  /* height: 100%; */
+  position: absolute;
+  height: 511px;
+  width: 100%;
+  z-index: 1;
+}
+/*
+.bus-hero::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 456px;
+  content: " ";
+
+  background: url("../../images//kbs\ bus.png") no-repeat;
+  background-size: cover;
+} */
+.blocker {
+  /* background-image: url("../../images//kbs\ bus.png") no-repeat;
+  position: relative; */
+  background: url("../../images//kbs\ bus.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.blocker::before {
+  /* background-color: rgba(0, 0, 0, 0.37);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 456px; */
+
+  background-color: rgba(12, 45, 72, 0.92);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  /* top: 0; */
+  width: 100%;
+  /* height: 511px; */
+  z-index: 1;
+}
+/* Slider */
+/* .slide-container {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: red;
+} */
+.image-slider {
+  /* width: 100%; */
+  height: 400px;
+  /* position: absolute; */
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+.hire-hero .carousel-inner {
+  display: flex;
+}
+.hire-hero .carousel-item {
+  display: block;
+
+  justify-self: end;
+  align-self: center;
+  left: 50%;
+}
+.hire-hero .carousel-item img {
+  height: 383px;
+  width: 348px;
+}
+.hire-hero .carousel-item.active {
+  z-index: 1;
+  left: 0;
+}
+.hire-hero .carousel-item.active img {
+  height: 450px;
+  width: 423px;
+  z-index: 1;
+}
+.hire-hero .carousel-control-next {
+  width: 4rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: solid 2px rgb(197, 219, 245);
+  top: 90%;
+  /* bottom: 10%; */
+}
+.hire-hero .carousel-control-next-icon {
+  background-image: url("../../images/carousel-next.png");
+  position: absolute;
+  width: 2.61rem;
+  height: 0.7rem;
+}
+.hire-hero .carousel-control-prev {
+  display: none;
+}

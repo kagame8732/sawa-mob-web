@@ -1,14 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-darkblue text-whitecolor py-3 px-10">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-2  my-10 ">
-        <div className="flex justify-center items-center">
+      <div className="grid grid-cols-5 sm:grid-cols-5 lg:grid-cols-5  gap-2  my-10 ">
+        <div className="flex justify-center items-center col-span-2 md:col-span-1">
           <h5 className="font-bold text-lg">Sawa Mob</h5>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-2 col-span-2 md:col-span-1">
           <h5 className="font-bold text-lg ">Contact</h5>
           <div className="space-y-2">
             <p className="text-sm">Phone - 0789878237</p>
@@ -18,16 +18,28 @@ function Footer() {
         <div className="space-y-2 col-span-2">
           <h5 className="font-bold text-lg ">Follow</h5>
           <div className="grid grid-cols-2 gap-2">
-            <a className="text-sm font-light">Twiter</a>
-            <a className="text-sm font-thin">Instagram</a>
-            <a className="text-sm font-thin">Facebook</a>
-            <a className="text-sm">Linkedin</a>
+            <a className="text-sm font-light cursor-pointer" href="/#">
+              Twiter
+            </a>
+            <a className="text-sm font-thin cursor-pointer" href="/#">
+              Instagram
+            </a>
+            <a className="text-sm font-thin cursor-pointer" href="/#">
+              Facebook
+            </a>
+            <a className="text-sm cursor-pointer" href="/#">
+              Linkedin
+            </a>
           </div>
         </div>
 
-        <div className="flex flex-col justify-end space-y-1">
-          <p className="text-sm font-semibold">Privacy policy</p>
-          <p className="text-sm font-semibold">Terms & Conditions</p>
+        <div className="flex flex-col justify-end space-y-1 col-span-2 sm:col-span-1">
+          <Link to="/" className="text-sm font-semibold">
+            Privacy policy
+          </Link>
+          <Link to="/" className="text-sm font-semibold">
+            Terms & Conditions
+          </Link>
         </div>
       </div>
       <div className="flex justify-center items-center space-x-1">
