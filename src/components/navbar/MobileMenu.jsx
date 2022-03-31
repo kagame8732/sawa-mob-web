@@ -19,26 +19,26 @@ function MobileMenu({ setShowMobileNav }) {
         <NavLink
           exact
           to="/"
-          className="hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
-          activeClassName=" border-opacity-100 border-blue-400"
+          className="hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          activeClassName=" border-opacity-100 border-lightblue"
         >
           Home
         </NavLink>
         <NavLink
           exact
           to="/about"
-          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
-          activeClassName=" border-opacity-100 border-blue-400"
+          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          activeClassName=" border-opacity-100 border-lightblue"
         >
           About
         </NavLink>
         <NavLink
           exact
           to="/membership"
-          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
-          activeClassName=" border-opacity-100 border-blue-400"
+          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          activeClassName=" border-opacity-100 border-lightblue"
         >
-          Become a member
+          Drive & Earn
         </NavLink>
         {/* <NavLink
 exact
@@ -47,13 +47,13 @@ className={
   (location?.pathname === "/"
     ? " hover:text-whitecolor  "
     : " hover:text-darkergray  ") +
-  " p-3 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 "
+  " p-3 text-sm  border-b-4 border-opacity-0  hover:border-lightblue "
 }
-activeClassName=" border-opacity-100 border-blue-400"
+activeClassName=" border-opacity-100 border-lightblue"
 >
 Download App
 </NavLink> */}
-        <button className=" hover:text-whitecolor  text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1">
+        <button className=" hover:text-whitecolor  text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1">
           Download App
         </button>
 
@@ -64,9 +64,9 @@ Download App
               " hover:text-whitecolor text-whitecolor " +
               (location?.pathname === "/bikeride" ||
               location?.pathname === "/busride"
-                ? " border-blue-400 border-opacity-100 "
+                ? " border-lightblue border-opacity-100 "
                 : "  ") +
-              "focus:outline-none focus:ring-0  py-4 px-2 text-sm border-l-0 border-r-0 border-t-0 border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
+              "focus:outline-none focus:ring-0  py-4 px-2 text-sm border-l-0 border-r-0 border-t-0 border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
             }
             id="dropdown-basic"
           >

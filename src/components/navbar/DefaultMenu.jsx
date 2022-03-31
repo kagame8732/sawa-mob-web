@@ -14,9 +14,9 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-whitecolor  "
             : " hover:text-darkergray  ") +
-          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
+          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
-        activeClassName=" border-opacity-100 border-blue-400"
+        activeClassName=" border-opacity-100 border-lightblue"
       >
         Home
       </NavLink>
@@ -27,9 +27,9 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-whitecolor  "
             : " hover:text-darkergray  ") +
-          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
+          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
-        activeClassName=" border-opacity-100 border-blue-400"
+        activeClassName=" border-opacity-100 border-lightblue"
       >
         About
       </NavLink>
@@ -40,11 +40,11 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-whitecolor  "
             : " hover:text-darkergray  ") +
-          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
+          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
-        activeClassName=" border-opacity-100 border-blue-400"
+        activeClassName=" border-opacity-100 border-lightblue"
       >
-        Become a member
+        Drive & Earn
       </NavLink>
       {/* <NavLink
     exact
@@ -64,7 +64,7 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-whitecolor  "
             : " hover:text-darkergray  ") +
-          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
+          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
       >
         Download App
@@ -79,9 +79,9 @@ function DefaultMenu() {
               : " hover:text-darkergray  ") +
             (location?.pathname === "/bikeride" ||
             location?.pathname === "/busride"
-              ? " border-blue-400 border-opacity-100 "
+              ? " border-lightblue border-opacity-100 "
               : "  ") +
-            "focus:outline-none focus:ring-0  py-4 px-2 text-sm border-l-0 border-r-0 border-t-0 border-b-4 border-opacity-0  hover:border-blue-400 rounded-1"
+            "focus:outline-none focus:ring-0  py-4 px-2 text-sm border-l-0 border-r-0 border-t-0 border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           }
           id="dropdown-basic"
         >
