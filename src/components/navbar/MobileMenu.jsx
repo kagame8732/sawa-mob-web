@@ -40,24 +40,31 @@ function MobileMenu({ setShowMobileNav }) {
         >
           Drive & Earn
         </NavLink>
-        {/* <NavLink
-exact
-to="/membership"
-className={
-  (location?.pathname === "/"
-    ? " hover:text-whitecolor  "
-    : " hover:text-darkergray  ") +
-  " p-3 text-sm  border-b-4 border-opacity-0  hover:border-lightblue "
-}
-activeClassName=" border-opacity-100 border-lightblue"
->
-Download App
-</NavLink> */}
-        <button className=" hover:text-whitecolor  text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1">
-          Download App
-        </button>
-
-        <Dropdown className="d-inline">
+        <NavLink
+          exact
+          to="/corporate"
+          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          activeClassName=" border-opacity-100 border-lightblue"
+        >
+          corporate
+        </NavLink>
+        <NavLink
+          exact
+          to="/schools"
+          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          activeClassName=" border-opacity-100 border-lightblue"
+        >
+          Schools
+        </NavLink>
+        <NavLink
+          exact
+          to="/contact"
+          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          activeClassName=" border-opacity-100 border-lightblue"
+        >
+          Contact
+        </NavLink>
+        {/* <Dropdown className="d-inline">
           <DropdownToggle
             variant=""
             className={
@@ -100,7 +107,7 @@ Download App
               </button>
             </Dropdown.Item>
           </Dropdown.Menu>
-        </Dropdown>
+        </Dropdown> */}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { banks, districts } from "../../utils/data";
 function SignUp() {
   const [passport, setPassport] = useState(null);
   const [license, setLicense] = useState(null);
-  const [tripType, setTripType] = useState(null);
+  const [serviceType, setServiceType] = useState(null);
   return (
     <form className="flex flex-col space-y-10 px-6 signup">
       <div className="rounded-xs bg-blue-50 p-10 space-y-10">
@@ -350,18 +350,18 @@ function SignUp() {
               <input
                 className="form-check-input "
                 type="radio"
-                name="trip-type"
-                id="one-way-treep"
-                value="One Way Treep"
-                selected={tripType === "One Way Treep" ? true : false}
+                name="service-type"
+                id="car-rental"
+                value="Car rental"
+                selected={serviceType === "Car rental" ? true : false}
                 required
-                onChange={(e) => setTripType(e.target.value)}
+                onChange={(e) => setServiceType(e.target.value)}
               />
               <label
                 className="form-check-label text-xs text-darkblue"
-                for="one-way-treep"
+                for="car-rental"
               >
-                One Way Treep
+                Car rental
               </label>
             </div>
 
@@ -369,54 +369,54 @@ function SignUp() {
               <input
                 className="form-check-input"
                 type="radio"
-                name="trip-type"
-                id="round-treep"
-                value="Round Treep"
-                selected={tripType === "Round Treep" ? true : false}
+                name="service-type"
+                id="ride-sharing"
+                value="Ride sharing"
+                selected={serviceType === "Ride sharing" ? true : false}
                 required
-                onChange={(e) => setTripType(e.target.value)}
+                onChange={(e) => setServiceType(e.target.value)}
               />
               <label
                 className="form-check-label text-xs text-darkblue"
-                for="round-treep"
+                for="ride-sharing"
               >
                 Round Treep
               </label>
             </div>
 
             <div className="flex items-center bg-white pr-3 rounded-1">
-              <label htmlFor="bus-top" className="sr-only">
-                Pick up bus top
+              <label htmlFor="student-transport" className="sr-only">
+                Student Transport
               </label>
               <input
                 type="text"
-                name="bus-top"
-                id="bus-top"
-                autoComplete="bus-top"
+                name="student-transport"
+                id="student-transport"
+                autoComplete="student-transport"
                 className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
-                placeholder="Pick up bus top"
+                placeholder="Student Transport"
               />
 
               <IoLocationSharp className="text-base text-darkblue" />
             </div>
             <div className="flex items-center bg-white pr-3 rounded-1">
-              <label htmlFor="bus-top-end" className="sr-only">
-                End drop-off bus stop
+              <label htmlFor="staff-pickup-drop-off" className="sr-only">
+                Office staff pickup & drop off
               </label>
               <input
                 type="text"
-                name="bus-top-end"
-                id="bus-top-end"
-                autoComplete="bus-top-end"
+                name="staff-pickup-drop-off"
+                id="staff-pickup-drop-off"
+                autoComplete="staff-pickup-drop-off"
                 className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
-                placeholder="End drop-off bus stop"
+                placeholder=" Office staff pickup & drop off"
               />
 
               <IoLocationSharp className="text-base text-darkblue" />
             </div>
             <div className="flex items-center bg-white pr-3 rounded-1">
               <label htmlFor="time" className="sr-only">
-                Time
+                Entercity and long distance trips
               </label>
               <input
                 type="text"
@@ -424,23 +424,23 @@ function SignUp() {
                 id="time"
                 autoComplete="time"
                 className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
-                placeholder="Time"
+                placeholder="Entercity and long distance trips"
               />
 
               <MdAccessTime className="text-base text-darkblue" />
             </div>
             <div className=" bg-white">
-              <label htmlFor="seats" className="sr-only">
-                Available seats
+              <label htmlFor="package-delivery" className="sr-only">
+                Package delivery
               </label>
               <input
-                id="seats"
-                name="seats"
+                id="package-delivery"
+                name="package-delivery"
                 type="number"
-                autoComplete="seats"
+                autoComplete="package-delivery"
                 required
                 className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
-                placeholder="Available seats"
+                placeholder="Package delivery"
               />
             </div>
           </div>
@@ -448,13 +448,11 @@ function SignUp() {
           <div></div>
         </div>
         <p className="text-sm px-6 text-lightgray">
-          Consectetur eiusmod mollit et excepteur ea nisi nisi reprehenderit
-          quis consectetur tempor mollit. Irure cupidatat voluptate tempor
-          offict incididunt. Irure e lit commo do proident officia labore elit
-          laborum elit nostrud elit.
+          Please note that driver and car vetting process will be done before
+          onboarding your car on our platform.
         </p>
       </div>
-      <button className="align-self-center mx-10 py-2 px-20 lg:px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-sm">
+      <button className="align-self-center mx-10 py-2.5 px-20 lg:px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-sm">
         Complete Sign Up
       </button>
     </form>

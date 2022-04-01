@@ -46,31 +46,46 @@ function DefaultMenu() {
       >
         Drive & Earn
       </NavLink>
-      {/* <NavLink
-    exact
-    to="/membership"
-    className={
-      (location?.pathname === "/"
-        ? " hover:text-whitecolor  "
-        : " hover:text-darkergray  ") +
-      " p-3 text-sm  border-b-4 border-opacity-0  hover:border-blue-400 "
-    }
-    activeClassName=" border-opacity-100 border-blue-400"
-  >
-    Download App
-  </NavLink> */}
-      <button
+      <NavLink
+        exact
+        to="/corporate"
         className={
           (location?.pathname === "/"
             ? " hover:text-whitecolor  "
             : " hover:text-darkergray  ") +
           " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
+        activeClassName=" border-opacity-100 border-lightblue"
       >
-        Download App
-      </button>
-
-      <Dropdown className="d-inline">
+        Corporate
+      </NavLink>
+      <NavLink
+        exact
+        to="/schools"
+        className={
+          (location?.pathname === "/"
+            ? " hover:text-whitecolor  "
+            : " hover:text-darkergray  ") +
+          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+        }
+        activeClassName=" border-opacity-100 border-lightblue"
+      >
+        Schools
+      </NavLink>
+      <NavLink
+        exact
+        to="/contact"
+        className={
+          (location?.pathname === "/"
+            ? " hover:text-whitecolor  "
+            : " hover:text-darkergray  ") +
+          " py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+        }
+        activeClassName=" border-opacity-100 border-lightblue"
+      >
+        Contact
+      </NavLink>
+      {/* <Dropdown className="d-inline">
         <DropdownToggle
           variant=""
           className={
@@ -115,7 +130,7 @@ function DefaultMenu() {
             </button>
           </Dropdown.Item>
         </Dropdown.Menu>
-      </Dropdown>
+      </Dropdown> */}
     </div>
   );
 }

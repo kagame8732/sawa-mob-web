@@ -35,6 +35,41 @@ body {
   height: 478px;
   width: 100%;
 }
+
+.home .carousel-control-next {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: solid 2px rgb(197, 219, 245);
+  border-radius: 50%;
+  top: 40%;
+  right: 10px;
+}
+.home .carousel-control-next-icon {
+  background-image: url("../../images//next-icon.png");
+  position: absolute;
+  /* top: 100%; */
+  margin-top: 5px;
+  width: 0.61rem;
+  height: 1rem;
+}
+.home .carousel-control-prev {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: solid 2px rgb(197, 219, 245);
+  border-radius: 50%;
+  top: 40%;
+  left: 10px;
+}
+.home .carousel-control-prev-icon {
+  background-image: url("../../images//prev-icon.png");
+  position: absolute;
+  /* top: 100%; */
+  margin-top: 5px;
+  width: 0.61rem;
+  height: 1rem;
+}
 .ticketing-banner {
   position: relative;
   height: 478px;
@@ -125,6 +160,111 @@ body {
 .signup .form-check-input:checked {
   background-color: rgba(12, 45, 72, 1);
   border-color: rgba(12, 45, 72, 1);
+}
+/* About */
+.about-hero {
+  background: url("../../images/map2.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 1;
+  height: 511px;
+  width: 100%;
+}
+
+.about-hero::after {
+  background: url("../../images/circleEllipse.png") no-repeat;
+  content: "";
+  position: absolute;
+  left: 30%;
+  height: 560px;
+  width: 560px;
+  z-index: 1;
+}
+.about-hero::before {
+  background-color: rgba(12, 45, 72, 0.92);
+  content: "";
+  display: block;
+  /* height: 100%; */
+  position: absolute;
+  height: 511px;
+  width: 100%;
+  z-index: 1;
+}
+
+.about-hero .carousel-inner {
+  display: flex;
+}
+.about-hero .carousel-item {
+  display: block;
+
+  justify-self: end;
+  align-self: center;
+  left: 50%;
+}
+.about-hero .carousel-item img {
+  height: 383px;
+  width: 348px;
+}
+.about-hero.carousel-item.active {
+  z-index: 1;
+  left: 0;
+}
+.about-hero .carousel-item.active img {
+  height: 450px;
+  width: 423px;
+  z-index: 1;
+}
+.about-hero .carousel-control-prev {
+  width: 4rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: solid 2px rgb(197, 219, 245);
+  top: 90%;
+  /* bottom: 10%; */
+}
+.about-hero .carousel-control-prev-icon {
+  background-image: url("../../images/carousel-next.png");
+  position: absolute;
+  width: 2.61rem;
+  height: 0.7rem;
+}
+.about-hero .carousel-control-next {
+  display: none;
+}
+/* Corporate */
+.corporate-hero {
+  background: url("../../images/corporate-back2.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 561px;
+}
+.corporate-hero::before {
+  /* background-color: rgba(12, 45, 72, 0.92); */
+  background: url("../../images/corporate-back1.png") no-repeat;
+  content: "";
+  display: block;
+  /* height: 100%; */
+  position: absolute;
+  height: 557px;
+  width: 100%;
+  z-index: 1;
+}
+/* Schools */
+.schools-hero {
+  background: url("../../images/school-back2.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 561px;
+}
+.schools-hero::before {
+  background: url("../../images/school-back1.png") no-repeat;
+  content: "";
+  display: block;
+  /* height: 100%; */
+  position: absolute;
+  height: 557px;
+  width: 100%;
+  z-index: 1;
 }
 /* Bus */
 .bus-hero {

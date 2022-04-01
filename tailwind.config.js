@@ -36,6 +36,8 @@ module.exports = {
       navyblue: "#1E355C",
       lightgray: "rgba(75, 89, 101, 1)",
       darkergray: "rgba(10, 24, 35, 1)",
+      bluishgray: "#05334F",
+      darkbluishgray: "#033F63",
     },
     spacing: {
       px: "1px",
@@ -460,6 +462,7 @@ module.exports = {
       full: "100%",
       screen: "100vh",
       screenheight: "90vh",
+      footerheight: "10vh",
     }),
     inset: (theme, { negative }) => ({
       auto: "auto",
@@ -571,6 +574,8 @@ module.exports = {
       0: "0px",
       full: "100%",
       screen: "100vh",
+      footerheight: "10vh",
+      screenheight: "90vh",
     },
     minWidth: {
       0: "0px",
