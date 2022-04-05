@@ -110,11 +110,11 @@ body {
 @keyframes fade-in-move-down {
   0% {
     opacity: 0;
-    transform: translateX(-3rem);
+    transform: translateY(-3rem);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 /* @keyframes buttonmove {
@@ -434,6 +434,7 @@ body {
   width: 100%;
   z-index: 1;
 }
+/* @media (min-width: 30em) and (max-width: 50em) {.schools-hero::before {} } */
 /* Bus */
 .bus-hero {
   background: url("../../images//kbs\ bus.png") no-repeat;
