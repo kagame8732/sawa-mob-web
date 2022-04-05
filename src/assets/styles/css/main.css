@@ -422,19 +422,44 @@ body {
   background: url("../../images/school-back2.png") no-repeat;
   background-size: cover;
   position: relative;
-  height: 561px;
+  /* height: 561px; */
 }
 .schools-hero::before {
   background: url("../../images/school-back1.png") no-repeat;
+  background-size: cover;
   content: "";
   display: block;
-  /* height: 100%; */
   position: absolute;
-  height: 557px;
+  /* height: 557px; */
   width: 100%;
   z-index: 1;
 }
-/* @media (min-width: 30em) and (max-width: 50em) {.schools-hero::before {} } */
+@media (max-width: 500px) {
+  .schools-hero {
+    height: 565px;
+  }
+  .schools-hero::before {
+    height: 557px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .schools-hero {
+    height: 665px;
+  }
+  .schools-hero::before {
+    height: 657px;
+  }
+}
+@media (min-width: 768px) {
+  .schools-hero {
+    height: 565px;
+  }
+  .schools-hero::before {
+    height: 557px;
+  }
+}
+
 /* Bus */
 .bus-hero {
   background: url("../../images//kbs\ bus.png") no-repeat;
