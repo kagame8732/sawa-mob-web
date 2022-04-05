@@ -247,7 +247,7 @@ function index() {
             Mobility as a Service
           </h2>
           <div className=" grid grid-cols-1 sm:grid-cols-2 bg-lightblue rounded-2xl sm:mr-16 ">
-            <div className="m-10 md:mx-20 text-white grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="m-10 md:mx-20 text-white grid grid-cols-1 md:grid-cols-3 gap-4">
               <ul className="list-disc col-span-2">
                 <li>All in one App</li>
                 <li>Transport Packages</li>
@@ -264,12 +264,12 @@ function index() {
               <img
                 src={phoneImg}
                 alt="Phone app"
-                className="hidden sm:block absolute bottom-0 right-0 max-h-80 z-10"
+                className="hidden sm:block absolute bottom-0 right-0 max-h-80 object-cover z-10"
               />
               <img
                 src={subtractElipseImg}
                 alt="Phone app"
-                className="hidden sm:block absolute bottom-0 max-h-56 md:max-h-80 -right-20 "
+                className="hidden sm:block absolute bottom-0 max-h-56 md:max-h-72 lg:max-h-80 -right-20 "
               />
             </div>
           </div>
@@ -294,7 +294,8 @@ function index() {
           </div>
           <div className="flex flex-wrap justify-around items-center p-6 space-x-3 space-y-4 md:space-y-0">
             <svg
-              className="w-14"
+              // className="w-14"
+              className="w-8 mb-2"
               width="67"
               height="56"
               viewBox="0 0 67 56"
@@ -366,7 +367,7 @@ function index() {
             <img
               src={royalexpressLogoImg}
               alt="Royal express Logo"
-              className="object-cover max-h-7"
+              className="object-cover max-h-9"
             />
           </div>
           <p className="text-bluishgray text-sm font-semibold text-center p-2">
@@ -378,7 +379,7 @@ function index() {
             Infrastructure
           </h5>
           <hr className="text-lightdarkblue w-100 " />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mx-10 md:mx-32 p-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center sm:mx-10 md:mx-32 p-6">
             <svg
               className=" w-14"
               width="73"

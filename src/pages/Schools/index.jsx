@@ -14,7 +14,7 @@ function Schools() {
               Providing safer, cheaper and more reliable STUDENTS transportation
               services.
             </p>
-            <button className="flex space-x-3 bg-darkblue hover:opacity-70 py-2 px-3 rounded-xl ">
+            <button className="button-fade flex space-x-3 bg-darkblue hover:opacity-70 py-2 px-3 rounded-xl ">
               <p className="text-sm">Get started</p>
               <HiArrowRight />
             </button>

@@ -26,7 +26,7 @@ function index() {
                 const titleElement = document.getElementById("sign-up-form");
                 titleElement.scrollIntoView({ behavior: "smooth" });
               }}
-              className="bg-darkblue hover:opacity-70 text-sm py-2 px-6 text-whitecolor rounded-xl"
+              className="button-fade bg-darkblue hover:opacity-70 text-sm py-2 px-6 text-whitecolor rounded-xl"
             >
               Become a Member
             </button>

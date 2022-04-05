@@ -22,9 +22,9 @@ import { MdOutlineLocationOn } from "react-icons/md";
 function index() {
   return (
     <div className="pb-6">
-      <div className="about-hero flex items-center ">
+      <div className="about-hero flex items-center overflow-hidden">
         <img src={herobackImg} className=" absolute z-10" />
-        <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 flex flex-col md:flex-row  items-center space-x-3 text-white">
+        <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 flex flex-col md:flex-row  items-center space-x-3 space-y-10 md:space-y-0 text-white">
           {/* <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 grid items-center space-x-3 text-white"> */}
           <div className=" flex flex-col space-y-4 ">
             <div className="align-self-start">
@@ -47,12 +47,12 @@ function index() {
               <div className="">
                 <img src={africaImg} alt="Transport " className="" />
               </div>
-            </div>
-            <div className="absolute right-10 bottom-40 w-56">
-              <h5 className="font-bold text-lg">Tommorow</h5>
-              <p className="text-sm px-2">
-                Ultimate freedom of mobility tailored to your need.
-              </p>
+              <div className="absolute top-32 sm:top-48 md:top-40 md:left-0 -left-10 lg:left-96 lg:top-52 lg:w-56 w-40">
+                <h5 className="font-bold text-lg">Tommorow</h5>
+                <p className="text-sm px-2">
+                  Ultimate freedom of mobility tailored to your need.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -265,12 +265,12 @@ function index() {
       <div className="bg-gray-50  py-20  px-20 md:px-32">
         <div className="relative flex justify-end h-96 md:h-auto">
           <div className="bg-darkblue  p-10   absolute md:max-w-sm top-60 md:top-20 md:left-0 z-10 ">
+            <h5 className="text-lg font-bold text-white my-2">
+              Current Traction
+            </h5>
             <p className="text-sm text-white">
-              Consectetur eiusmod mollit et excepteur ea nisi nisi reprehenderit
-              quis consectetu r tempor mollit. Irure cupidatat voluptate tempor
-              offict incididunt. Irure elit commo do proident officia labore
-              laborum elit nos trud elit. Adipisicing mollit sint amet do sit
-              officia eiusmod consectetur cillum.
+              Increased utilisaztion rate and route optimisation with on- demand
+              routing
             </p>
           </div>
           <div className="w-screen  justify-center  md:justify-end flex">
