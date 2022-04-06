@@ -19,7 +19,7 @@ function MobileMenu({ setShowMobileNav }) {
         <NavLink
           exact
           to="/"
-          className="hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          className="hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
         >
           Home
@@ -27,7 +27,7 @@ function MobileMenu({ setShowMobileNav }) {
         <NavLink
           exact
           to="/about"
-          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
         >
           About
@@ -35,7 +35,7 @@ function MobileMenu({ setShowMobileNav }) {
         <NavLink
           exact
           to="/membership"
-          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
         >
           Drive & Earn
@@ -43,7 +43,7 @@ function MobileMenu({ setShowMobileNav }) {
         <NavLink
           exact
           to="/corporate"
-          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
         >
           corporate
@@ -51,7 +51,7 @@ function MobileMenu({ setShowMobileNav }) {
         <NavLink
           exact
           to="/schools"
-          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
         >
           Schools
@@ -59,7 +59,7 @@ function MobileMenu({ setShowMobileNav }) {
         <NavLink
           exact
           to="/contact"
-          className=" hover:text-whitecolor   py-4 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
         >
           Contact
@@ -73,7 +73,7 @@ function MobileMenu({ setShowMobileNav }) {
               location?.pathname === "/busride"
                 ? " border-lightblue border-opacity-100 "
                 : "  ") +
-              "focus:outline-none focus:ring-0  py-4 px-2 text-sm border-l-0 border-r-0 border-t-0 border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+              "focus:outline-none focus:ring-0  py-4 px-2 text-base border-l-0 border-r-0 border-t-0 border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
             }
             id="dropdown-basic"
           >

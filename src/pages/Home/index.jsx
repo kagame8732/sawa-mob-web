@@ -25,7 +25,7 @@ function index() {
   return (
     <div>
       <div className="home">
-        <Carousel indicators={true} interval={5000}>
+        <Carousel indicators={true} interval={null}>
           <Carousel.Item className="w-100">
             <HomeBannerSlider
               message={"Never worry about “How do I get there?”"}
@@ -49,13 +49,11 @@ function index() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="lg:px-10 px-6 sm:px-10 md:px-20 py-10 space-y-16">
-        <div className="bg-indigo-50 flex flex-wrap px-10 lg:px-20 relative">
-          <div className="flex-1 pt-16 pb-10 space-y-10 px-0.5 sm:px-6 lg:px-20">
-            <h5 className="text-darkergray text-base font-bold">
-              Our Solution
-            </h5>
-            <p className="text-lightgray text-sm">
+      <div className="lg:px-40 px-6 sm:px-10 md:px-20 py-10 space-y-16">
+        <div className="bg-indigo-50 flex flex-wrap px-10 lg:space-x-1 relative">
+          <div className="flex-1 pt-16 pb-10 space-y-10 px-0.5 sm:px-6 lg:px-0">
+            <h5 className="text-2xl text-navyblue font-bold">Our Solution</h5>
+            <p className="text-bluishgray text-base font-semibold">
               {" "}
               What if all transportation was converged....
             </p>
@@ -64,11 +62,11 @@ function index() {
             <img
               src={sawamobServices}
               alt="Swa Mob Services"
-              className="max-h-72 object-cover"
+              // className="max-h-72 object-cover"
             />
           </div>
           <div className="flex-1 p-10 md:pt-16 pb-52 text-end md:text-start">
-            <p className="text-lightgray text-sm">
+            <p className="text-bluishgray text-base font-semibold">
               .....and tailored to your need?
             </p>
             <img
@@ -79,10 +77,11 @@ function index() {
           </div>
         </div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-3  py-10 px-10 lg:px-20  gap-6 md:gap-10  lg:gap-32">
+        <div className=" grid grid-cols-1 md:grid-cols-3  py-10 lg:pt-36 lg:pb-10 px-10 lg:px-20  gap-6 md:gap-10  lg:gap-32">
           <div className="flex flex-col">
             <svg
-              className="align-self-center w-16 h-16 mb-3.5"
+              // className="align-self-center w-16 h-16 mb-3.5"
+              className="align-self-center "
               width="84"
               height="84"
               viewBox="0 0 84 84"
@@ -102,16 +101,17 @@ function index() {
                 fill="#2E8BC0"
               />
             </svg>
-            <h5 className="text-navyblue text-base text-center font-bold">
+            <h5 className="text-navyblue text-xl text-center font-bold lg:px-7 py-3">
               All Transport in one Wallet
             </h5>
-            <p className="text-xs my-2 text-center">
+            <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-sm leading-8 blackblue">
               One Payment System which offer you a True freedom of mobility.
             </p>
           </div>
           <div className="flex flex-col">
             <svg
-              className="align-self-center w-16 h-20"
+              // className="align-self-center w-16 h-20"
+              className="align-self-center "
               width="85"
               height="85"
               viewBox="0 0 85 85"
@@ -147,17 +147,18 @@ function index() {
                 </clipPath>
               </defs>
             </svg>
-            <h5 className="text-navyblue text-base text-center font-bold">
+            <h5 className="text-navyblue text-xl text-center font-bold lg:px-10 py-8">
               Less Hassle
             </h5>
-            <p className="text-xs my-2 text-center">
+            <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-sm leading-8 blackblue">
               One Intermodal System which is Taking Away the pain of “how do I
               get there?”.
             </p>
           </div>
           <div className="flex flex-col">
             <svg
-              className="align-self-center w-20 h-20"
+              // className="align-self-center w-20 h-20"
+              className="align-self-center"
               width="135"
               height="86"
               viewBox="0 0 135 86"
@@ -221,10 +222,10 @@ function index() {
                 </clipPath>
               </defs>
             </svg>
-            <h5 className="text-navyblue text-base text-center font-bold">
+            <h5 className="text-navyblue text-xl text-center font-bold lg:px-7 py-3">
               ETA & Route Optimisation
             </h5>
-            <p className="text-xs my-2 text-center">
+            <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-sm leading-8 blackblue">
               No more waitingfor a bus you don’t know when it’s coming.
             </p>
           </div>
@@ -232,29 +233,29 @@ function index() {
       </div>
       <div className="lg:px-32 px-6 sm:px-10 md:px-20 py-10 ">
         <div className="flex  justify-center">
-          <h2 className="text-xl w-60 text-center font-bold">
+          <h2 className="text-3xl w-60 lg:w-96 text-center font-bold text-darkblack">
             All- in one Platform For All Transport Means
           </h2>
         </div>
-        <div className="flex  justify-center my-6">
-          <p className="text-sm w-96 text-center text-gray-900">
+        <div className="flex  justify-center my-8">
+          <p className="w-96 text-center text-xl font-bold text-gray-600">
             Make your trips easy with our all-in-one app that simplifies your
             process and gives you cheap offers.
           </p>
         </div>
         <div className="mt-32">
-          <h2 className="text-darkblue text-base my-2 mx-10 md:mx-20 font-bold">
+          <h2 className="text-darkblue text-3xl my-3 mx-10 md:mx-20 font-bold">
             Mobility as a Service
           </h2>
           <div className=" grid grid-cols-1 sm:grid-cols-2 bg-lightblue rounded-2xl sm:mr-16 ">
             <div className="m-10 md:mx-20 text-white grid grid-cols-1 md:grid-cols-3 gap-4">
-              <ul className="list-disc col-span-2">
+              <ul className="list-disc col-span-2  font-semibold leading-9">
                 <li>All in one App</li>
                 <li>Transport Packages</li>
                 <li>Customer Experience</li>
                 <li>Transport Wallet</li>
               </ul>
-              <ul className="list-disc">
+              <ul className="list-disc  font-semibold leading-9">
                 <li>ETA</li>
                 <li>Payments</li>
                 <li>Routing</li>
@@ -275,7 +276,7 @@ function index() {
           </div>
         </div>
         <div className="  bg-indigo-50 rounded-2xl space-y-4 mt-16">
-          <h5 className="text-bluishgray font-bold text-base text-center pt-4">
+          <h5 className="text-bluishgray font-bold text-lg text-center pt-4">
             Transportation Providers
           </h5>
 
@@ -375,7 +376,7 @@ function index() {
           </p>
         </div>
         <div className="  bg-indigo-50 rounded-2xl space-y-4 my-6 ">
-          <h5 className="text-lightdarkblue font-bold text-base text-center pt-4 ">
+          <h5 className="text-lightdarkblue font-bold text-lg text-center pt-4 ">
             Infrastructure
           </h5>
           <hr className="text-lightdarkblue w-100 " />
@@ -467,15 +468,15 @@ function index() {
           </div>
         </div>
       </div>
-      <div className="bg-darkblue  flex justify-center items-center relative text-white h-72">
+      <div className="bg-darkblue  flex justify-center items-center relative text-white h-96">
         <img
           src={busImg1}
           alt="ticketing system station"
           className=" hidden md:block absolute left-0 top-0 h-100"
         />
         <div className="mx-10 md:mx-0 md:w-40 lg:w-80">
-          <h5 className="font-bold text-xl ">Mass Transportation</h5>
-          <p className="text-sm pt-6">
+          <h5 className="font-bold text-2xl ">Mass Transportation</h5>
+          <p className="text-base pt-6">
             {" "}
             Providing transport service tailored to groups of people such as
             schools, events attendees, office staff. All transport fees and trip
@@ -489,17 +490,17 @@ function index() {
         />
       </div>
       <div className="lg:px-32 px-6 sm:px-10 md:px-20 py-10 space-y-20 md:space-y-32 products">
-        <h5 className="text-gray-800 font-bold text-xl text-center">
+        <h5 className="text-darkblack font-bold text-3xl text-center">
           Our Mobility Providers
         </h5>
 
         <MobilepartsSlider />
         <div className=" grid grid-cols-1 md:grid-cols-2 bg-lightdarkblue rounded-2xl ">
           <div className="m-10 text-white">
-            <h5 className="font-bold  text-base mb-6">
+            <h5 className="font-bold  text-lg mb-6">
               With our Mobile app, Every Transport means is accurate!
             </h5>
-            <p className="text-xs">Get The App on</p>
+            <p className="text-base">Get The App on</p>
             <div className="flex flex-wrap space-y-3 md:space-y-0 md:space-x-2 my-2">
               <button className=" bg-white px-2 py-1 rounded-xl">
                 <svg

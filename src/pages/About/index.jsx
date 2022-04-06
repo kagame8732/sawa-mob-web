@@ -21,8 +21,8 @@ import platformImg from "../../assets/images/platform.png";
 import { MdOutlineLocationOn } from "react-icons/md";
 function index() {
   return (
-    <div className="pb-6">
-      <div className="about-hero flex items-center overflow-hidden">
+    <div className="pb-6 p-10">
+      <div className=" about-hero flex items-center overflow-hidden">
         <img src={herobackImg} className=" absolute z-10" />
         <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 flex flex-col md:flex-row  items-center space-x-3 space-y-10 md:space-y-0 text-white">
           {/* <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 grid items-center space-x-3 text-white"> */}
@@ -58,13 +58,13 @@ function index() {
         </div>
       </div>
       <div className="bg-gray-50  py-10  px-20 md:px-32 space-y-10">
-        <h2 className="text-darkblue font-bold text-lg text-center">
+        <h2 className="text-darkblue font-black text-3xl text-center my-2">
           What we are Building
         </h2>
         <div className=" grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex flex-col items-center">
             <svg
-              className="w-32 "
+              // className="w-32 "
               width="211"
               height="120"
               viewBox="0 0 211 120"
@@ -98,13 +98,13 @@ function index() {
               />
             </svg>
 
-            <p className="text-sm text-darkergray text-center">
+            <p className="font-bold text-sm leading-7 text-darkblue my-2 ">
               A simple and easy customer experience at the core.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <svg
-              className="w-32"
+              // className="w-32"
               width="211"
               height="113"
               viewBox="0 0 211 113"
@@ -157,14 +157,14 @@ function index() {
                 fill="#434A54"
               />
             </svg>
-            <p className="text-sm text-darkergray text-center">
+            <p className="font-bold text-sm leading-7 text-darkblue my-3">
               Variety of operators and transport providers,in one platform, one
               single App.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <svg
-              className="w-32"
+              // className="w-32"
               width="211"
               height="118"
               viewBox="0 0 211 118"
@@ -218,14 +218,14 @@ function index() {
               </defs>
             </svg>
 
-            <p className="text-sm text-darkergray text-center">
+            <p className="font-bold text-sm leading-7 text-darkblue my-2">
               Door to Door Journeys, all your trips, from A to B to Z with an
               enjoyable experience .
             </p>
           </div>
           <div className="flex flex-col items-center">
             <svg
-              className="w-32"
+              // className="w-32"
               width="211"
               height="120"
               viewBox="0 0 211 120"
@@ -254,7 +254,7 @@ function index() {
                 </clipPath>
               </defs>
             </svg>
-            <p className="text-sm text-darkergray text-center">
+            <p className="font-bold text-sm leading-7 text-darkblue my-2">
               Payment and ticketing handled in the background, all your tickets
               in one place..
             </p>
@@ -265,10 +265,10 @@ function index() {
       <div className="bg-gray-50  py-20  px-20 md:px-32">
         <div className="relative flex justify-end h-96 md:h-auto">
           <div className="bg-darkblue  p-10   absolute md:max-w-sm top-60 md:top-20 md:left-0 z-10 ">
-            <h5 className="text-lg font-bold text-white my-2">
+            <h5 className="text-2xl font-bold text-white my-3">
               Current Traction
             </h5>
-            <p className="text-sm text-white">
+            <p className="text-base text-white">
               Increased utilisaztion rate and route optimisation with on- demand
               routing
             </p>
@@ -283,22 +283,22 @@ function index() {
         </div>
       </div>
 
-      <div className="bg-lightdarkblue px-20 md:px-32 py-10 grid grid-cols-2 lg:grid-cols-4 gap-4 text-white">
+      <div className="bg-lightdarkblue -mx-10 px-20 md:px-32 py-10 grid grid-cols-2 lg:grid-cols-4 gap-4 text-white">
         <div>
-          <h5 className="font-bold text-2xl">500</h5>
-          <p className="text-sm">Vehicles Onboarded</p>
+          <h5 className="font-bold text-6xl">500</h5>
+          <p className="text-base">Vehicles Onboarded</p>
         </div>
         <div>
-          <h5 className="font-bold text-2xl">1700</h5>
-          <p className="text-sm">Active Apps Users</p>
+          <h5 className="font-bold text-6xl">1700</h5>
+          <p className="text-base">Active Apps Users</p>
         </div>
         <div>
-          <h5 className="font-bold text-2xl">8500</h5>
-          <p className="text-sm">Total Trips Completed</p>
+          <h5 className="font-bold text-6xl">8500</h5>
+          <p className="text-base">Total Trips Completed</p>
         </div>
         <div>
-          <h5 className="font-bold text-2xl">13,500</h5>
-          <p className="text-sm">Total Tickets Sold in General</p>
+          <h5 className="font-bold text-6xl">13,500</h5>
+          <p className="text-base">Total Tickets Sold in General</p>
         </div>
       </div>
       <div className=" px-20 md:px-32 py-20 space-y-20">
@@ -306,7 +306,7 @@ function index() {
           <div className="relative p-10 flex flex-col justify-center bg-darkblue">
             <div className="flex space-x-2 rounded-br-xl items-center text-lightdarkblue bg-white p-1 absolute top-0 left-0">
               <MdOutlineLocationOn className="text-xl" />
-              <p className="text-sm font-bold">From</p>
+              <p className="text-lg font-black">From</p>
             </div>
             <div className="align-self-center ">
               <img
@@ -352,23 +352,23 @@ function index() {
                 />
               </svg>
 
-              <p className="text-dark text-lg font-bold">To</p>
+              <p className=" text-2xl font-black text-darkblue">To</p>
             </div>
           </div>
-          <div className=" flex flex-col justify-center items-center bg-lightdarkblue ">
+          <div className=" flex flex-col justify-center items-center bg-lightdarkblue py-10 ">
             <p className="text-sm">Intergrated Passenger-centric offer</p>
             <img src={platformImg} alt="operation image" className="w-1/2" />
           </div>
         </div>
       </div>
 
-      <div className="bg-gray-100 px-20 md:px-32 py-10 space-y-20 text-white">
-        <div className="space-y-2 text-navyblue">
-          <h5 className=" font-bold text-xl text-center">
+      <div className="bg-gray-100 -mx-10 px-20 md:px-32 py-10 space-y-20 text-white">
+        <div className="space-y-6 text-navyblue">
+          <h5 className=" font-black text-3xl text-center">
             Our Management Team
           </h5>
 
-          <p className=" text-center text-sm ">
+          <p className=" text-center text-base text-blackblue">
             Our forward-thinking leadership team brings decades of experience,
             expertise, and principles to the table, allowing us to stand out
             from the crowd while also assisting our clients in doing so. Their
@@ -376,7 +376,7 @@ function index() {
             shapes the future of mobility with client success at the forefront.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 text-navyblue">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 text-bluishgray">
           <div>
             <div className="flex  justify-center">
               <img
@@ -389,7 +389,9 @@ function index() {
               <h5 className="font-bold text-sm text-center">
                 NOSTALGIE Patrice
               </h5>
-              <p className="text-xs text-center">Cofounder & CEO</p>
+              <p className="text-xs text-center text-blackblue">
+                Cofounder & CEO
+              </p>
             </div>
           </div>
           <div>
@@ -402,7 +404,9 @@ function index() {
             </div>
             <div className="border-t-2 border-whitecolor py-1 px-3 ">
               <h5 className="font-bold text-sm text-center">AMON Munyaneza</h5>
-              <p className="text-xs text-center">Cofounder & CSO</p>
+              <p className="text-xs text-center text-blackblue">
+                Cofounder & CSO
+              </p>
             </div>
           </div>
           <div>
@@ -415,7 +419,7 @@ function index() {
             </div>
             <div className="border-t-2 border-whitecolor py-1 px-3 ">
               <h5 className="font-bold text-sm text-center">ALEX Ntale</h5>
-              <p className="text-xs text-center">Advisor</p>
+              <p className="text-xs text-center text-blackblue">Advisor</p>
             </div>
           </div>
           <div>
@@ -430,7 +434,7 @@ function index() {
               <h5 className="font-bold text-sm text-center">
                 RINDIRO G. Bruce
               </h5>
-              <p className="text-xs text-center">COO</p>
+              <p className="text-xs text-center text-blackblue">COO</p>
             </div>
           </div>
           <div>
@@ -441,9 +445,9 @@ function index() {
                 className="object-cover relative"
               />
             </div>
-            <div className="border-t-2 border-whitecolor py-1 px-3 ">
+            <div className="border-t-2 border-whitecolor py-1 px-3  ">
               <h5 className="font-bold text-sm text-center">NGABO Rene</h5>
-              <p className="text-xs text-center">CTO</p>
+              <p className="text-xs text-center text-blackblue">CTO</p>
             </div>
           </div>
         </div>

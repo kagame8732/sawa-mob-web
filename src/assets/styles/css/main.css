@@ -22,6 +22,8 @@ body {
 
 .home-banner {
   background-image: url("../../images/trasnport\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   height: 478px;
 }
@@ -42,12 +44,12 @@ body {
 .home .carousel-control-next {
   display: none;
 }
-.home:hover .carousel-control-prev {
+/* .home:hover .carousel-control-prev {
   display: flex;
 }
 .home:hover .carousel-control-next {
   display: flex;
-}
+} */
 .home .carousel-control-next {
   width: 2rem;
   height: 2rem;

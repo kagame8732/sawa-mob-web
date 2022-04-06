@@ -11,7 +11,7 @@ function SignUp() {
     <form className="flex flex-col space-y-10 px-6 signup">
       <div className="rounded-xs bg-blue-50 p-10 space-y-10">
         <div className="space-y-6">
-          <h5 className="text-sm text-darkblue font-bold">
+          <h5 className="text-2xl text-darkblue font-black">
             Personal Information
           </h5>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -25,7 +25,7 @@ function SignUp() {
                 type="text"
                 autoComplete="first-name"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="First Name"
               />
             </div>
@@ -39,7 +39,7 @@ function SignUp() {
                 type="text"
                 autoComplete="last-name"
                 required
-                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Last Name"
               />
             </div>
@@ -53,7 +53,7 @@ function SignUp() {
                 type="email"
                 autoComplete="email"
                 required
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Email"
               />
             </div>
@@ -67,7 +67,7 @@ function SignUp() {
                 type="text"
                 autoComplete="phone"
                 required
-                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray  focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray  focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Phone Number"
               />
             </div>
@@ -77,18 +77,18 @@ function SignUp() {
               </label>
               <Form.Select
                 id="gender"
-                className="text-xs border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
+                className="text-base border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
               >
-                <option className="text-xs text-lightgray" selected>
+                <option className="text-base text-lightgray" selected>
                   Gender
                 </option>
-                <option className="text-xs text-lightgray" value="male">
+                <option className="text-base text-lightgray" value="male">
                   Male
                 </option>
-                <option className="text-xs text-lightgray" value="female">
+                <option className="text-base text-lightgray" value="female">
                   Female
                 </option>
-                <option className="text-xs text-lightgray" value="other">
+                <option className="text-base text-lightgray" value="other">
                   Other
                 </option>
               </Form.Select>
@@ -99,14 +99,14 @@ function SignUp() {
               </label>
               <Form.Select
                 id="district"
-                className="text-xs border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
+                className="text-base border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
               >
-                <option className="text-xs text-lightgray" selected>
+                <option className="text-base text-lightgray" selected>
                   Select District
                 </option>
                 {districts?.map((district, index) => (
                   <option
-                    className="text-xs text-lightgray"
+                    className="text-base text-lightgray"
                     key={index}
                     value={district?.name}
                   >
@@ -131,8 +131,8 @@ function SignUp() {
                 className="overflow-auto cursor-pointer rounded-sm   border-dashed py-2.5 bg-white px-3  w-100 flex justify-between items-center"
               >
                 <div>
-                  <p className="text-xs text-darkblue  ">Passport Photo </p>
-                  <p className="text-xs  text-red-500">
+                  <p className="text-base text-darkblue  ">Passport Photo </p>
+                  <p className="text-base  text-red-500">
                     {passport?.name ?? " "}{" "}
                   </p>
                 </div>
@@ -155,8 +155,8 @@ function SignUp() {
                 className="overflow-auto cursor-pointer rounded-sm   border-dashed py-1 bg-white px-3  w-100 flex justify-between items-center"
               >
                 <div>
-                  <p className="text-xs text-darkblue  ">Driver’s Licence </p>
-                  <p className="text-xs  text-red-500">
+                  <p className="text-base text-darkblue  ">Driver’s Licence </p>
+                  <p className="text-base  text-red-500">
                     {license?.name ?? " "}{" "}
                   </p>
                 </div>
@@ -180,7 +180,7 @@ function SignUp() {
           </div>
         </div>
         <div className="space-y-6">
-          <h5 className="text-sm text-darkblue font-bold">
+          <h5 className="text-2xl text-darkblue font-black">
             Vehicle Information
           </h5>
           <div className="grid sm:grid-cols-2 gap-2">
@@ -194,7 +194,7 @@ function SignUp() {
                 type="text"
                 autoComplete="Vehicle-make"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Vehicle Make"
               />
             </div>
@@ -208,7 +208,7 @@ function SignUp() {
                 type="text"
                 autoComplete="Vehicle-model"
                 required
-                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Vehicle Model"
               />
             </div>
@@ -222,7 +222,7 @@ function SignUp() {
                 type="number"
                 autoComplete="Vehicle-year"
                 required
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Vehicle year"
               />
             </div>
@@ -232,18 +232,18 @@ function SignUp() {
               </label>
               <Form.Select
                 id="vehicle-type"
-                className="text-xs border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
+                className="text-base border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
               >
-                <option className="text-xs text-lightgray" selected>
+                <option className="text-base text-lightgray" selected>
                   Vehicle Type
                 </option>
-                <option className="text-xs text-lightgray" value="blue">
+                <option className="text-base text-lightgray" value="blue">
                   cab
                 </option>
-                <option className="text-xs text-lightgray" value="black">
+                <option className="text-base text-lightgray" value="black">
                   school bus
                 </option>
-                <option className="text-xs text-lightgray" value="white">
+                <option className="text-base text-lightgray" value="white">
                   bus
                 </option>
               </Form.Select>
@@ -258,7 +258,7 @@ function SignUp() {
                 type="text"
                 autoComplete="plate-nbr"
                 required
-                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray  focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray  focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Plate Number"
               />
             </div>
@@ -268,18 +268,18 @@ function SignUp() {
               </label>
               <Form.Select
                 id="vehicle-color"
-                className="text-xs border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
+                className="text-base border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
               >
-                <option className="text-xs text-lightgray" selected>
+                <option className="text-base text-lightgray" selected>
                   Vehicle Color
                 </option>
-                <option className="text-xs text-lightgray" value="blue">
+                <option className="text-base text-lightgray" value="blue">
                   blue
                 </option>
-                <option className="text-xs text-lightgray" value="black">
+                <option className="text-base text-lightgray" value="black">
                   black
                 </option>
-                <option className="text-xs text-lightgray" value="white">
+                <option className="text-base text-lightgray" value="white">
                   white
                 </option>
               </Form.Select>
@@ -287,7 +287,9 @@ function SignUp() {
           </div>
         </div>
         <div className="space-y-6">
-          <h5 className="text-sm text-darkblue font-bold">Bank Information</h5>
+          <h5 className="text-2xl text-darkblue font-black">
+            Bank Information
+          </h5>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
             <div>
               <label htmlFor="account-number" className="sr-only">
@@ -299,7 +301,7 @@ function SignUp() {
                 type="text"
                 autoComplete="account-number"
                 required
-                className="appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Account Number"
               />
             </div>
@@ -314,7 +316,7 @@ function SignUp() {
                 type="text"
                 autoComplete="account-type"
                 required
-                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray  focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray  focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Account Type"
               />
             </div>
@@ -324,14 +326,14 @@ function SignUp() {
               </label>
               <Form.Select
                 id="bank"
-                className="text-xs border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
+                className="text-base border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
               >
-                <option className="text-xs text-lightgray" selected>
+                <option className="text-base text-lightgray" selected>
                   Bank
                 </option>
                 {banks?.map((bank, index) => (
                   <option
-                    className="text-xs text-lightgray"
+                    className="text-base text-lightgray"
                     key={index}
                     value={bank?.name}
                   >
@@ -343,7 +345,7 @@ function SignUp() {
           </div>
         </div>
         <div className="space-y-6">
-          <h5 className="text-sm text-darkblue font-bold">Route</h5>
+          <h5 className="text-2xl text-darkblue font-black">Route</h5>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <div className="form-check px-9 py-1.5 bg-white rounded-1">
@@ -358,7 +360,7 @@ function SignUp() {
                 onChange={(e) => setServiceType(e.target.value)}
               />
               <label
-                className="form-check-label text-xs text-darkblue"
+                className="form-check-label text-base text-darkblue"
                 for="car-rental"
               >
                 Car rental
@@ -377,7 +379,7 @@ function SignUp() {
                 onChange={(e) => setServiceType(e.target.value)}
               />
               <label
-                className="form-check-label text-xs text-darkblue"
+                className="form-check-label text-base text-darkblue"
                 for="ride-sharing"
               >
                 Round Treep
@@ -393,7 +395,7 @@ function SignUp() {
                 name="student-transport"
                 id="student-transport"
                 autoComplete="student-transport"
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Student Transport"
               />
 
@@ -408,7 +410,7 @@ function SignUp() {
                 name="staff-pickup-drop-off"
                 id="staff-pickup-drop-off"
                 autoComplete="staff-pickup-drop-off"
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder=" Office staff pickup & drop off"
               />
 
@@ -423,7 +425,7 @@ function SignUp() {
                 name="time"
                 id="time"
                 autoComplete="time"
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Entercity and long distance trips"
               />
 
@@ -439,7 +441,7 @@ function SignUp() {
                 type="number"
                 autoComplete="package-delivery"
                 required
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 sm:text-xs"
+                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
                 placeholder="Package delivery"
               />
             </div>
@@ -447,12 +449,12 @@ function SignUp() {
 
           <div></div>
         </div>
-        <p className="text-sm px-6 text-lightgray">
+        <p className="text-base px-6 text-lightgray">
           Please note that driver and car vetting process will be done before
           onboarding your car on our platform.
         </p>
       </div>
-      <button className="align-self-center mx-10 py-2.5 px-20 lg:px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-sm">
+      <button className="align-self-center font-bold mx-10 py-3 px-20 lg:px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-lg">
         Complete Sign Up
       </button>
     </form>

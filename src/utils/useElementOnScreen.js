@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 
 export default function useElementOnScreen(options) {
   const containerRef = useRef(null);
+  const moveleftRef = useRef(null);
+  const moveleftRight = useRef(null);
   const [refList, setRefList] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -30,13 +32,13 @@ export default function useElementOnScreen(options) {
   useEffect(() => {
     const observer = new IntersectionObserver(callbackFunction, options);
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
+    if (containerRef.current) observer.observe(containerRef.current);
+    if (moveleftRef.current) observer.observe(moveleftRef.current);
+    if (moveleftRight.current) observer.observe(moveleftRight.current);
 
     return () => {
       if (containerRef.current) observer.unobserve(containerRef.current);
     };
   }, [containerRef, options]);
-  return [containerRef, isVisible];
+  return [containerRef, moveleftRef, moveleftRight, isVisible];
 }

@@ -4,8 +4,8 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
   return (
     <div>
       <div className="home-banner flex items-center ">
-        <div className=" md:w-1/2 lg:w-2/5 align-self-end pb-32 px-16 md:px-20 text-white z-10">
-          <h2 id="message" className="text-4xl font-bold">
+        <div className=" md:w-1/2 lg:w-3/5 align-self-end pb-32 pl-16 md:pl-20 lg:pl-36 xl:pl-48 text-white z-10">
+          <h2 id="message" className="text-5xl font-bold">
             {message}
           </h2>
         </div>
@@ -13,11 +13,11 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
       <div className="px-10 md:px-20 grid grid-cols-1 md:grid-cols-2   bg-lightblue">
         <div
           id="action"
-          className="flex items-center space-x-3 py-6 action-btn"
+          className="flex items-center space-x-3 py-16 action-btn"
         >
           <button className="bg-white px-3 py-2 rounded-md">
             <svg
-              className="h-6"
+              className=""
               width="137"
               height="34"
               viewBox="0 0 137 34"
@@ -32,7 +32,7 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
           </button>
           <button className="bg-white px-3 py-2 rounded-md">
             <svg
-              className="h-6"
+              className=""
               width="136"
               height="32"
               viewBox="0 0 136 32"
@@ -186,12 +186,14 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
           <img
             src={phoneImg2}
             alt="Phone app"
-            className="hidden md:block absolute bottom-0 right-32 z-10 max-h-96 "
+            className="hidden md:block absolute bottom-0 md:left-0 lg:left-32 z-10  "
+            style={{ maxHeight: "513px" }}
           />
           <img
             src={phoneImg3}
             alt="Phone app"
-            className="hidden md:block absolute bottom-10 right-0 max-h-96"
+            className="hidden md:block absolute bottom-10 md:left-28 lg:left-80 "
+            style={{ maxHeight: "525px" }}
           />
         </div>
       </div>

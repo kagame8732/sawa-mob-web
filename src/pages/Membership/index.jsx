@@ -13,11 +13,11 @@ function index() {
           />
         </div>
         <div className="align-self-center  space-y-10">
-          <h2 className="text-darker-gray text-2xl px-10 font-bold">
+          <h2 className="text-darkblack text-4xl px-10 font-black">
             Own a vehicle? Let’s give you one more revenue stream.
           </h2>
           <div className=" bg-gray-50 p-10 space-y-10">
-            <p className="text-sm text-lightgray pt-2">
+            <p className="text-lg text-lightgray pt-2">
               Join Hundreds of vehicle owners to solve transport problems while
               profiting from their empty vehicle seats.
             </p>
@@ -26,7 +26,7 @@ function index() {
                 const titleElement = document.getElementById("sign-up-form");
                 titleElement.scrollIntoView({ behavior: "smooth" });
               }}
-              className="button-fade bg-darkblue hover:opacity-70 text-sm py-2 px-6 text-whitecolor rounded-xl"
+              className="button-fade bg-darkblue hover:opacity-70 text-lg py-3 px-10 text-whitecolor rounded-xl"
             >
               Become a Member
             </button>
@@ -35,10 +35,10 @@ function index() {
       </div>
       <div className="px-10 sm:px-20 md:px-32 py-10 space-y-10">
         <div className=" space-y-3">
-          <h5 className="text-darkergray font-bold text-xl text-center">
+          <h5 className="text-darkblack font-black text-3xl text-center">
             How it works
           </h5>
-          <p className=" text-center text-sm text-lightgray">
+          <p className=" text-center text-lg text-lightgray">
             Join a community of drivers making profits everday
           </p>
         </div>
@@ -58,10 +58,10 @@ function index() {
               />
             </svg>
 
-            <h5 className="text-base text-center font-bold">
+            <h5 className="text-lg text-center font-black">
               Onbord your vehicle
             </h5>
-            <p className="text-xs my-2">
+            <p className="text-sm my-3 font-extralight leading-7">
               Register your car today and get free Telematics data, including
               realtime tracking, automated car health check, and many more!
             </p>
@@ -111,10 +111,10 @@ function index() {
               />
             </svg>
 
-            <h5 className="text-base text-center font-bold">
+            <h5 className="text-lg text-center font-black">
               Register for mobility service
             </h5>
-            <p className="text-xs my-2">
+            <p className="text-sm my-3 font-extralight leading-7">
               Register your vehicle in one of our mobility service including,
               rental, ride sharing, bus service, package pickup and drop offs
               etc.
@@ -142,20 +142,20 @@ function index() {
                 fill="white"
               />
             </svg>
-            <h5 className="text-base text-center font-bold">
+            <h5 className="text-lg text-center font-black">
               More revenues & Fuel discounts
             </h5>
-            <p className="text-xs my-2">
+            <p className="text-sm my-3 font-extralight leading-7">
               Get hired through from our pool of clients and enjoy fuel
               discounts on every fuel charge.
             </p>
           </div>
         </div>
         <div id="sign-up-form" className=" space-y-3 my-10">
-          <h5 className="text-darkergray font-bold text-xl text-center">
+          <h5 className="text-darkergray font-black text-3xl text-center">
             Create an Account
           </h5>
-          <p className=" text-center text-sm text-lightgray">
+          <p className=" text-center text-lg text-lightgray">
             Kindly provide all the information requested below.
           </p>
         </div>

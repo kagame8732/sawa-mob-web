@@ -38,6 +38,8 @@ module.exports = {
       darkergray: "rgba(10, 24, 35, 1)",
       bluishgray: "#05334F",
       darkbluishgray: "#033F63",
+      blackblue: "#13223C",
+      darkblack: "#0A1823",
     },
     spacing: {
       px: "1px",
