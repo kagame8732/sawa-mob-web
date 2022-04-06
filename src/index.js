@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { transitions, positions, Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+import observer from "./assets/js/observer";
 const options = {
   position: positions.TOP_CENTER,
   timeout: 5000,
@@ -11,8 +12,9 @@ const options = {
 };
 ReactDOM.render(
   <AlertProvider template={AlertTemplate} {...options}>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode></AlertProvider>,
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </AlertProvider>,
   document.getElementById("root")
 );

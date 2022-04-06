@@ -47,7 +47,7 @@ function Navbar(props) {
               " py-4 px-2 font-semibold text-lg uppercase "
             }
           >
-            SAWA
+            SAWA MOBILITY
           </NavLink>
         </div>
         {isMobile ? (

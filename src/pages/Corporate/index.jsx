@@ -8,20 +8,20 @@ function Corporate() {
     <div className="space-y-28 md:space-y-20 pb-20">
       <div className="corporate-hero ">
         <div className="bg-transparent absolute z-10 w-100 p-10 md:p-32 text-white grid grid-cols-1 md:grid-cols-2">
-          <div className="space-y-10 p-6">
-            <h5 className="text-2xl font-bold w-60">
+          <div className="space-y-10 p-6 ">
+            <h5 className="text-2xl font-bold w-60 fade-in appear">
               Tailored mass transporation
             </h5>
-            <p className="text-sm ">
+            <p className="text-sm fade-in appear">
               Providing the best way to manage transportation for groups such as
               Students, Office Staff, event attendees etc.
             </p>
-            <button className=" button-fade flex space-x-3 bg-darkblue hover:opacity-70 py-2 px-3 rounded-xl ">
+            <button className=" button-fade fade-in-down appear flex space-x-3 bg-darkblue hover:opacity-70 py-2 px-3 rounded-xl ">
               <p className="text-sm">Get started</p>
               <HiArrowRight />
             </button>
           </div>
-          <div>
+          <div className="zoom-in appear">
             <img src={phoneImg} alt="Shuri Bus App" className="" />
           </div>
         </div>
@@ -38,7 +38,7 @@ function Corporate() {
             landscape..
           </p>
         </div>
-        <div className="md:order-first">
+        <div className="md:order-first fade-left appear">
           <img src={statisticsImg} alt="Statistics " className="" />
         </div>
       </div>
@@ -54,7 +54,7 @@ function Corporate() {
             you to plan all of your professional and leisure trips.
           </p>
         </div>
-        <div className="pt-10  align-self-end">
+        <div className="pt-10  align-self-end fade-right appear">
           <img src={financesImg} alt="Finances" className="" />
         </div>
       </div>

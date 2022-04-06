@@ -11,7 +11,10 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
         </div>
       </div>
       <div className="px-10 md:px-20 grid grid-cols-1 md:grid-cols-2   bg-lightblue">
-        <div className="flex items-center space-x-3 py-6">
+        <div
+          id="action"
+          className="flex items-center space-x-3 py-6 action-btn"
+        >
           <button className="bg-white px-3 py-2 rounded-md">
             <svg
               className="h-6"
@@ -179,7 +182,7 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
             </svg>
           </button>
         </div>
-        <div id="img" className="hidden md:block relative img-fade">
+        <div className="hidden md:block relative img-fade">
           <img
             src={phoneImg2}
             alt="Phone app"

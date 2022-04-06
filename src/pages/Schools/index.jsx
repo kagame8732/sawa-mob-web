@@ -3,14 +3,32 @@ import { HiArrowRight } from "react-icons/hi";
 import trackingImg from "../../assets/images/tracking.png";
 import PhoneImg from "../../assets/images/phones2.png";
 import busImg from "../../assets/images/shuribus.png";
+import useElementOnScreen from "../../utils/useElementOnScreen.js";
+import { useInView } from "react-intersection-observer";
+
 function Schools() {
+  const [containerRef, isVisible] = useElementOnScreen({
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  });
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+    trackVisibility: true,
+    delay: 100,
+  });
+
+  // console.log("visible", isVisible);
   return (
     <div className="pb-20">
       <div className="schools-hero ">
         <div className="bg-transparent absolute z-10 w-100 p-10 md:p-32 text-white grid grid-cols-1 md:grid-cols-2">
           <div className="space-y-10 p-6">
-            <h5 className="text-2xl font-bold ">ShuriBus</h5>
-            <p className="text-sm ">
+            <h5 className="text-2xl font-bold fade-in appear">ShuriBus</h5>
+            <p className="text-sm fade-in appear">
               Providing safer, cheaper and more reliable STUDENTS transportation
               services.
             </p>
@@ -19,15 +37,20 @@ function Schools() {
               <HiArrowRight />
             </button>
           </div>
-          <div>
+          <div className="zoom-in appear">
             <img src={busImg} alt="Bus" className="" />
           </div>
         </div>
       </div>
       <div className="px-10 my-10 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div>
+        <div
+          // className={(isVisible ? " appear " : "") + "fade-left "}
+          className=" fade-left appear"
+          // ref={containerRef}
+        >
           <img src={trackingImg} alt="Statistics " className="" />
         </div>
+
         <div className="align-self-center space-y-4 text-darkblue">
           <h5 className="font-bold text-lg ">
             Real-time tracking of the kids and ETA
@@ -51,7 +74,10 @@ function Schools() {
             Monthly, Termly)
           </p>
         </div>
-        <div className="pt-10  align-self-end md:relative">
+        <div
+          className="pt-10  align-self-end md:relative fade-right appear"
+          // ref={containerRef}
+        >
           <img
             src={PhoneImg}
             alt="Finances"
