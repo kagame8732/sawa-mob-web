@@ -35,7 +35,7 @@ function Corporate() {
       </div>
       <div className="mx-10 md:mx-20 my-10 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="align-self-center space-y-10 text-darkblue">
-          <h5 className="font-black text-5xl text-darkblue ">
+          <h5 className="font-black text-3xl text-darkblue ">
             Total Organisation of company’s Mobility
           </h5>
           <p className="text-base ">
@@ -51,7 +51,7 @@ function Corporate() {
       </div>
       <div className="bg-lightblue my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="align-self-center space-y-10 text-white p-10">
-          <h5 className="font-black text-4xl ">
+          <h5 className="font-black text-3xl ">
             Total Organisation of company’s Mobility
           </h5>
           <p className="text-base ">

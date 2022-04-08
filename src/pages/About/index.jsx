@@ -21,10 +21,10 @@ import platformImg from "../../assets/images/platform.png";
 import { MdOutlineLocationOn } from "react-icons/md";
 function index() {
   return (
-    <div className="pb-6 p-10">
+    <div className="pb-6 ">
       <div className=" about-hero flex items-center overflow-hidden">
         <img src={herobackImg} className=" absolute z-10" />
-        <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 flex flex-col md:flex-row  items-center space-x-3 space-y-10 md:space-y-0 text-white">
+        <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 flex flex-col md:flex-row  items-center space-x-3 md:space-x-10 space-y-10 md:space-y-0 text-white">
           {/* <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 grid items-center space-x-3 text-white"> */}
           <div className=" flex flex-col space-y-4 ">
             <div className="align-self-start">
@@ -61,10 +61,10 @@ function index() {
         <h2 className="text-darkblue font-black text-3xl text-center my-2">
           What we are Building
         </h2>
-        <div className=" grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex flex-col items-center">
             <svg
-              // className="w-32 "
+              className="w-32 "
               width="211"
               height="120"
               viewBox="0 0 211 120"
@@ -104,7 +104,7 @@ function index() {
           </div>
           <div className="flex flex-col items-center">
             <svg
-              // className="w-32"
+              className="w-32"
               width="211"
               height="113"
               viewBox="0 0 211 113"
@@ -164,7 +164,7 @@ function index() {
           </div>
           <div className="flex flex-col items-center">
             <svg
-              // className="w-32"
+              className="w-32"
               width="211"
               height="118"
               viewBox="0 0 211 118"
@@ -225,7 +225,7 @@ function index() {
           </div>
           <div className="flex flex-col items-center">
             <svg
-              // className="w-32"
+              className="w-32"
               width="211"
               height="120"
               viewBox="0 0 211 120"
@@ -262,13 +262,13 @@ function index() {
         </div>
       </div>
 
-      <div className="bg-gray-50  py-20  px-20 md:px-32">
+      <div className="bg-gray-50  py-20  px-6 sm:px-10 mb-16 sm:mb-0 md:px-32">
         <div className="relative flex justify-end h-96 md:h-auto">
           <div className="bg-darkblue  p-10   absolute md:max-w-sm top-60 md:top-20 md:left-0 z-10 ">
-            <h5 className="text-2xl font-bold text-white my-3">
+            <h5 className="text-lg font-bold text-white my-3">
               Current Traction
             </h5>
-            <p className="text-base text-white">
+            <p className="text-sm text-white">
               Increased utilisaztion rate and route optimisation with on- demand
               routing
             </p>
@@ -277,31 +277,31 @@ function index() {
             <img
               src={appuserImg1}
               alt="app user"
-              className="  w-3/4 h-60 md:h-96 object-cover"
+              className="  md:w-3/4 h-60 md:h-96 object-cover"
             />
           </div>
         </div>
       </div>
 
-      <div className="bg-lightdarkblue -mx-10 px-20 md:px-32 py-10 grid grid-cols-2 lg:grid-cols-4 gap-4 text-white">
+      <div className="bg-lightdarkblue px-20 md:px-32 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-white">
         <div>
-          <h5 className="font-bold text-6xl">500</h5>
-          <p className="text-base">Vehicles Onboarded</p>
+          <h5 className="font-bold text-3xl">500</h5>
+          <p className="text-sm">Vehicles Onboarded</p>
         </div>
         <div>
-          <h5 className="font-bold text-6xl">1700</h5>
-          <p className="text-base">Active Apps Users</p>
+          <h5 className="font-bold text-3xl">1700</h5>
+          <p className="text-sm">Active Apps Users</p>
         </div>
         <div>
-          <h5 className="font-bold text-6xl">8500</h5>
-          <p className="text-base">Total Trips Completed</p>
+          <h5 className="font-bold text-3xl">8500</h5>
+          <p className="text-sm">Total Trips Completed</p>
         </div>
         <div>
-          <h5 className="font-bold text-6xl">13,500</h5>
-          <p className="text-base">Total Tickets Sold in General</p>
+          <h5 className="font-bold text-3xl">13,500</h5>
+          <p className="text-sm">Total Tickets Sold in General</p>
         </div>
       </div>
-      <div className=" px-20 md:px-32 py-20 space-y-20">
+      <div className=" px-6 sm:px-10 md:px-32 py-20 space-y-20">
         <div className="grid grid-cols-1 md:grid-cols-2 text-white">
           <div className="relative p-10 flex flex-col justify-center bg-darkblue">
             <div className="flex space-x-2 rounded-br-xl items-center text-lightdarkblue bg-white p-1 absolute top-0 left-0">
@@ -318,7 +318,7 @@ function index() {
                 Push of Operators offering different Products
               </p>
             </div>
-            <div className="bg-white py-1 flex items-center w-20 space-x-3 justify-center rounded-xl  absolute md:-right-9 -bottom-5 right-1/2 md:bottom-1/2">
+            <div className="bg-white py-1 flex items-center w-20 space-x-3 justify-center rounded-xl  absolute md:-right-9 -bottom-5 right-1/3 sm:right-1/2 md:bottom-1/2">
               <svg
                 width="28"
                 height="31"
@@ -356,13 +356,15 @@ function index() {
             </div>
           </div>
           <div className=" flex flex-col justify-center items-center bg-lightdarkblue py-10 ">
-            <p className="text-sm">Intergrated Passenger-centric offer</p>
+            <p className="text-sm text-center">
+              Intergrated Passenger-centric offer
+            </p>
             <img src={platformImg} alt="operation image" className="w-1/2" />
           </div>
         </div>
       </div>
 
-      <div className="bg-gray-100 -mx-10 px-20 md:px-32 py-10 space-y-20 text-white">
+      <div className="bg-gray-100  px-6 sm:px-10 md:px-32 py-10 space-y-20 text-white">
         <div className="space-y-6 text-navyblue">
           <h5 className=" font-black text-3xl text-center">
             Our Management Team

@@ -11,7 +11,7 @@ function SignUp() {
     <form className="flex flex-col space-y-10 px-6 signup">
       <div className="rounded-xs bg-blue-50 p-10 space-y-10">
         <div className="space-y-6">
-          <h5 className="text-2xl text-darkblue font-black">
+          <h5 className="text-lg text-darkblue font-black">
             Personal Information
           </h5>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -180,7 +180,7 @@ function SignUp() {
           </div>
         </div>
         <div className="space-y-6">
-          <h5 className="text-2xl text-darkblue font-black">
+          <h5 className="text-lg text-darkblue font-black">
             Vehicle Information
           </h5>
           <div className="grid sm:grid-cols-2 gap-2">
@@ -287,9 +287,7 @@ function SignUp() {
           </div>
         </div>
         <div className="space-y-6">
-          <h5 className="text-2xl text-darkblue font-black">
-            Bank Information
-          </h5>
+          <h5 className="text-lg text-darkblue font-black">Bank Information</h5>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
             <div>
               <label htmlFor="account-number" className="sr-only">
@@ -345,7 +343,7 @@ function SignUp() {
           </div>
         </div>
         <div className="space-y-6">
-          <h5 className="text-2xl text-darkblue font-black">Route</h5>
+          <h5 className="text-lg text-darkblue font-black">Route</h5>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <div className="form-check px-9 py-1.5 bg-white rounded-1">
@@ -454,7 +452,7 @@ function SignUp() {
           onboarding your car on our platform.
         </p>
       </div>
-      <button className="align-self-center font-bold mx-10 py-3 px-20 lg:px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-lg">
+      <button className="align-self-center font-bold mx-10 py-3 px-20 lg:px-32 rounded-xl bg-lightdarkblue hover:opacity-70 text-whitecolor text-base">
         Complete Sign Up
       </button>
     </form>

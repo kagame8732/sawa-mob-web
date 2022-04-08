@@ -3,10 +3,16 @@ import { NavLink, useHistory, useLocation } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import { MdClose } from "react-icons/md";
-
+import rdaLogo from "../../assets/images/rda flag 1.png";
+import { useDispatch, useSelector } from "react-redux";
+import { onChangeLocation } from "../../store/actions";
 function MobileMenu({ setShowMobileNav }) {
+  const { locations, selectedLocation } = useSelector(
+    ({ Locations }) => Locations
+  );
   const location = useLocation();
   const history = useHistory();
+  const dispatch = useDispatch();
   return (
     <div className="absolute left-0 top-0 z-30 w-2/3 sm:w-1/2 bg-darkblue h-screen">
       <div className="flex flex-col items-center space-x-2 font-medium relative text-whitecolor">
@@ -64,50 +70,46 @@ function MobileMenu({ setShowMobileNav }) {
         >
           Contact
         </NavLink>
-        {/* <Dropdown className="d-inline">
+        <Dropdown className="d-inline">
           <DropdownToggle
             variant=""
-            className={
-              " hover:text-whitecolor text-whitecolor " +
-              (location?.pathname === "/bikeride" ||
-              location?.pathname === "/busride"
-                ? " border-lightblue border-opacity-100 "
-                : "  ") +
-              "focus:outline-none focus:ring-0  py-4 px-2 text-base border-l-0 border-r-0 border-t-0 border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
-            }
+            className="   border-0 focus:outline-none focus:ring-0  py-4 px-4  text-white flex"
             id="dropdown-basic"
           >
-            Hire a ride
+            <div className="flex items-center justify-center space-x-3">
+              <img
+                src={rdaLogo}
+                alt="Rda flag"
+                className="max-h-6 object-cover"
+              />
+              <p className="text-xs font-semibold text-whitecolor">
+                {selectedLocation?.name}
+              </p>
+            </div>
           </DropdownToggle>
 
           <Dropdown.Menu className="z-40">
-            <Dropdown.Item>
-              <button
-                className="dropdown-item  text-xs"
-                data-toggle="modal"
-                data-target="#logoutModal"
-                onClick={() => {
-                  history.push("/busride");
-                }}
-              >
-                Bus
-              </button>
-            </Dropdown.Item>
-
-            <Dropdown.Item>
-              <button
-                className="dropdown-item  text-xs "
-                data-toggle="modal"
-                data-target="#logoutModal"
-                onClick={() => {
-                  history.push("/bikeride");
-                }}
-              >
-                Cab / bike / School bus
-              </button>
-            </Dropdown.Item>
+            {locations?.map((location, index) => (
+              <Dropdown.Item key={index}>
+                <button
+                  data-toggle="modal"
+                  data-target="#logoutModal"
+                  className="flex items-center justify-center space-x-3"
+                  onClick={() => dispatch(onChangeLocation(location))}
+                >
+                  <img
+                    src={rdaLogo}
+                    alt="Rda flag"
+                    className="max-h-6 object-cover"
+                  />
+                  <p className="text-xs font-semibold text-darkblue">
+                    {location?.name}
+                  </p>
+                </button>
+              </Dropdown.Item>
+            ))}
           </Dropdown.Menu>
-        </Dropdown> */}
+        </Dropdown>
       </div>
     </div>
   );

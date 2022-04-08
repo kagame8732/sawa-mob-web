@@ -4,6 +4,7 @@ import mapImg from "../../assets/images/map-img.png";
 import searchImg from "../../assets/images/search-img.png";
 import busImg1 from "../../assets/images/bus Rda 2.png";
 import busImg2 from "../../assets/images/staff bus 1.png";
+import phoneImg1 from "../../assets/images/phone1.png";
 import phoneImg2 from "../../assets/images/phone2.png";
 import phoneImg3 from "../../assets/images/phone3.png";
 import phoneImg from "../../assets/images/phone.png";
@@ -25,26 +26,27 @@ function index() {
   return (
     <div>
       <div className="home">
-        <Carousel indicators={true} interval={null}>
+        <Carousel indicators={true} interval={5000}>
           <Carousel.Item className="w-100">
             <HomeBannerSlider
               message={"Never worry about “How do I get there?”"}
-              phoneImg2={phoneImg2}
-              phoneImg3={phoneImg3}
+              phoneImg={phoneImg1}
+              // phoneImg2={phoneImg2}
+              // phoneImg3={phoneImg3}
             />
           </Carousel.Item>
           <Carousel.Item>
             <HomeBannerSlider
               message={"All your transport in one app."}
-              phoneImg2={phoneImg2}
-              phoneImg3={phoneImg3}
+              phoneImg={phoneImg2}
+              // phoneImg3={phoneImg3}
             />
           </Carousel.Item>
           <Carousel.Item>
             <HomeBannerSlider
               message={"Everything set at a press of a button."}
-              phoneImg2={phoneImg2}
-              phoneImg3={phoneImg3}
+              phoneImg={phoneImg3}
+              // phoneImg3={phoneImg3}
             />
           </Carousel.Item>
         </Carousel>
@@ -147,7 +149,7 @@ function index() {
                 </clipPath>
               </defs>
             </svg>
-            <h5 className="text-navyblue text-xl text-center font-bold lg:px-10 py-8">
+            <h5 className="text-navyblue text-xl text-center font-bold lg:px-10 py-3">
               Less Hassle
             </h5>
             <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-sm leading-8 blackblue">
@@ -501,8 +503,8 @@ function index() {
               With our Mobile app, Every Transport means is accurate!
             </h5>
             <p className="text-base">Get The App on</p>
-            <div className="flex flex-wrap space-y-3 md:space-y-0 md:space-x-2 my-2">
-              <button className=" bg-white px-2 py-1 rounded-xl">
+            <div className="flex flex-wrap   md:space-x-2 my-2">
+              <button className=" bg-white px-2 py-1 rounded-xl m-1">
                 <svg
                   className="w-24"
                   width="153"
@@ -533,7 +535,7 @@ function index() {
                   />
                 </svg>
               </button>
-              <button className="flex bg-white  px-2 py-1 rounded-xl space-x-2 items-center">
+              <button className="flex bg-white  px-2 py-1 rounded-xl space-x-2 items-center m-1">
                 <svg
                   width="36"
                   height="37"

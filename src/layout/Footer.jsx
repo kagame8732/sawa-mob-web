@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-darkblue text-whitecolor py-3 px-10">
-      <div className="grid grid-cols-5 sm:grid-cols-5 lg:grid-cols-5  gap-2  my-10 ">
-        <div className="flex justify-center items-center col-span-2 md:col-span-1">
+      <div className="grid grid-cols-5 sm:grid-cols-5 lg:grid-cols-5 gap-10  md:gap-2  my-10 ">
+        <div className="flex justify-center items-center col-span-5 md:col-span-1">
           <h5 className="font-bold text-lg">Sawa Mob</h5>
         </div>
         <div className="space-y-2 col-span-2 md:col-span-1">
@@ -33,7 +33,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-end space-y-1 col-span-2 sm:col-span-1">
+        <div className="flex flex-col justify-end space-y-1 col-span-5 sm:col-span-1">
           <Link to="/" className="text-sm font-semibold">
             Privacy policy
           </Link>

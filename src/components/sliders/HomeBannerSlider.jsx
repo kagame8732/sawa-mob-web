@@ -1,23 +1,26 @@
 import React from "react";
 
-function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
+function HomeBannerSlider({ message, phoneImg }) {
   return (
     <div>
-      <div className="home-banner flex items-center ">
-        <div className=" md:w-1/2 lg:w-3/5 align-self-end pb-32 pl-16 md:pl-20 lg:pl-36 xl:pl-48 text-white z-10">
-          <h2 id="message" className="text-5xl font-bold">
+      <div className="home-banner flex md:items-center pt-24 md:pt-0 ">
+        <div className=" md:w-1/2 lg:w-3/6 md:align-self-end md:pb-32 pl-16 md:pl-20 lg:pl-36 xl:pl-48 text-white z-10">
+          <h2
+            id="message"
+            className="md:text-3xl  text-2xl w-52 md:w-100 font-bold"
+          >
             {message}
           </h2>
         </div>
       </div>
-      <div className="px-10 md:px-20 grid grid-cols-1 md:grid-cols-2   bg-lightblue">
+      <div className="px-10 md:px-1.5 lg:px-20 grid grid-cols-1 md:grid-cols-2   bg-lightblue">
         <div
           id="action"
-          className="flex items-center space-x-3 py-16 action-btn"
+          className="md:flex items-center px-6 md:px-0 py-6 action-btn"
         >
-          <button className="bg-white px-3 py-2 rounded-md">
+          <button className="bg-white px-3 m-2  rounded-md">
             <svg
-              className=""
+              className="h-12"
               width="137"
               height="34"
               viewBox="0 0 137 34"
@@ -30,9 +33,9 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
               />
             </svg>
           </button>
-          <button className="bg-white px-3 py-2 rounded-md">
+          <button className="bg-white px-3 m-2 rounded-md">
             <svg
-              className=""
+              className="h-12"
               width="136"
               height="32"
               viewBox="0 0 136 32"
@@ -182,19 +185,19 @@ function HomeBannerSlider({ message, phoneImg2, phoneImg3 }) {
             </svg>
           </button>
         </div>
-        <div className="hidden md:block relative img-fade">
+        <div className="relative img-fade">
           <img
-            src={phoneImg2}
+            src={phoneImg}
             alt="Phone app"
-            className="hidden md:block absolute bottom-0 md:left-0 lg:left-32 z-10  "
-            style={{ maxHeight: "513px" }}
+            className=" absolute bottom-28 sm:left-60 md:bottom-0  md:left-0 lg:left-32 z-10  "
+            // style={{ maxHeight: "513px" }}
           />
-          <img
+          {/* <img
             src={phoneImg3}
             alt="Phone app"
-            className="hidden md:block absolute bottom-10 md:left-28 lg:left-80 "
+            className=" absolute bottom-10 md:left-28 lg:left-80 "
             style={{ maxHeight: "525px" }}
-          />
+          /> */}
         </div>
       </div>
     </div>

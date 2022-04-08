@@ -2,8 +2,7 @@ import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 import trackingImg from "../../assets/images/tracking.png";
 import PhoneImg from "../../assets/images/phones2.png";
-// import busImg from "../../assets/images/shuribus.png";
-import busImg from "../../assets/images/bus Rda 3.png";
+import busImg from "../../assets/images/shuri-bus.png";
 import useElementOnScreen from "../../utils/useElementOnScreen.js";
 import { useInView } from "react-intersection-observer";
 
@@ -45,8 +44,9 @@ function Schools() {
             <img
               src={busImg}
               alt="Bus"
-              // className=""
-              className=" absolute right-0  md:w-1/2 md:bottom-32 lg:bottom-0 lg:top-12 w-3/4"
+              className=""
+              // className=" absolute right-0  md:w-1/2 md:bottom-32 lg:bottom-0 lg:top-12 w-3/4"
+              // className=" absolute right-0  md:w-1/2 md:bottom-32 lg:bottom-0 lg:top-12 max-h-96"
             />
           </div>
         </div>
@@ -61,7 +61,7 @@ function Schools() {
         </div>
 
         <div className="align-self-center space-y-10 text-darkblue">
-          <h5 className="font-black text-5xl text-darkblue ">
+          <h5 className="font-black text-3xl text-darkblue ">
             Real-time tracking of the kids and ETA
           </h5>
           <p className="text-base ">
@@ -74,7 +74,7 @@ function Schools() {
       </div>
       <div className="bg-yellow-500 my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10  ">
         <div className="align-self-center space-y-10 text-white px-10 lg:px-20 pt-20 md:h-80">
-          <h5 className="font-black text-4xl  ">
+          <h5 className="font-black text-3xl  ">
             Affordable Monthly subscriptions
           </h5>
           <p className="text-base ">

@@ -3,21 +3,21 @@ import driverImg from "../../assets/images/driver.png";
 import SignUp from "../../components/auth/SignUp";
 function index() {
   return (
-    <div className="py-10">
-      <div className="flex">
-        <div className=" hidden md:block w-3/4">
+    <div className=" pb-10 md:pt-10">
+      <div className="md:flex space-y-6 md:space-y-0">
+        <div className="w-full  md:w-3/4">
           <img
             src={driverImg}
             alt="driver"
-            className="max-h-96 w-100 object-cover "
+            className="max-h-72 md:max-h-96 w-100 object-cover "
           />
         </div>
-        <div className="align-self-center  space-y-10">
-          <h2 className="text-darkblack text-4xl px-10 font-black">
+        <div className="align-self-center  space-y-6">
+          <h2 className="text-darkblack text-xl lg:text-3xl px-10 font-black">
             Own a vehicle? Let’s give you one more revenue stream.
           </h2>
-          <div className=" bg-gray-50 p-10 space-y-10">
-            <p className="text-lg text-lightgray pt-2">
+          <div className=" bg-gray-50 px-10 py-6 md:py-10 space-y-10">
+            <p className="text-base text-lightgray pt-2">
               Join Hundreds of vehicle owners to solve transport problems while
               profiting from their empty vehicle seats.
             </p>
@@ -26,14 +26,14 @@ function index() {
                 const titleElement = document.getElementById("sign-up-form");
                 titleElement.scrollIntoView({ behavior: "smooth" });
               }}
-              className="button-fade bg-darkblue hover:opacity-70 text-lg py-3 px-10 text-whitecolor rounded-xl"
+              className="button-fade bg-darkblue hover:opacity-70 text-sm py-3 px-10 text-whitecolor rounded-xl"
             >
               Become a Member
             </button>
           </div>
         </div>
       </div>
-      <div className="px-10 sm:px-20 md:px-32 py-10 space-y-10">
+      <div className="px-6 sm:px-10 md:px-16 lg:px-32 py-10 space-y-10">
         <div className=" space-y-3">
           <h5 className="text-darkblack font-black text-3xl text-center">
             How it works
