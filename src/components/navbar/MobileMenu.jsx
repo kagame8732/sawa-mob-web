@@ -27,6 +27,7 @@ function MobileMenu({ setShowMobileNav }) {
           to="/"
           className="hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
+          onClick={() => setShowMobileNav(false)}
         >
           Home
         </NavLink>
@@ -35,6 +36,7 @@ function MobileMenu({ setShowMobileNav }) {
           to="/about"
           className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
+          onClick={() => setShowMobileNav(false)}
         >
           About
         </NavLink>
@@ -43,6 +45,7 @@ function MobileMenu({ setShowMobileNav }) {
           to="/membership"
           className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
+          onClick={() => setShowMobileNav(false)}
         >
           Drive & Earn
         </NavLink>
@@ -51,6 +54,7 @@ function MobileMenu({ setShowMobileNav }) {
           to="/corporate"
           className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
+          onClick={() => setShowMobileNav(false)}
         >
           corporate
         </NavLink>
@@ -59,6 +63,7 @@ function MobileMenu({ setShowMobileNav }) {
           to="/schools"
           className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
+          onClick={() => setShowMobileNav(false)}
         >
           Schools
         </NavLink>
@@ -67,6 +72,7 @@ function MobileMenu({ setShowMobileNav }) {
           to="/contact"
           className=" hover:text-whitecolor   py-4 px-2 text-base  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
           activeClassName=" border-opacity-100 border-lightblue"
+          onClick={() => setShowMobileNav(false)}
         >
           Contact
         </NavLink>
@@ -95,7 +101,10 @@ function MobileMenu({ setShowMobileNav }) {
                   data-toggle="modal"
                   data-target="#logoutModal"
                   className="flex items-center justify-center space-x-3"
-                  onClick={() => dispatch(onChangeLocation(location))}
+                  onClick={() => {
+                    dispatch(onChangeLocation(location));
+                    setShowMobileNav(false);
+                  }}
                 >
                   <img
                     src={rdaLogo}

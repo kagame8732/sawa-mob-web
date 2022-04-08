@@ -26,27 +26,23 @@ function index() {
   return (
     <div>
       <div className="home">
-        <Carousel indicators={true} interval={5000}>
+        <Carousel indicators={true} interval={null}>
           <Carousel.Item className="w-100">
             <HomeBannerSlider
               message={"Never worry about “How do I get there?”"}
               phoneImg={phoneImg1}
-              // phoneImg2={phoneImg2}
-              // phoneImg3={phoneImg3}
             />
           </Carousel.Item>
           <Carousel.Item>
             <HomeBannerSlider
               message={"All your transport in one app."}
               phoneImg={phoneImg2}
-              // phoneImg3={phoneImg3}
             />
           </Carousel.Item>
           <Carousel.Item>
             <HomeBannerSlider
               message={"Everything set at a press of a button."}
               phoneImg={phoneImg3}
-              // phoneImg3={phoneImg3}
             />
           </Carousel.Item>
         </Carousel>
@@ -504,7 +500,11 @@ function index() {
             </h5>
             <p className="text-base">Get The App on</p>
             <div className="flex flex-wrap   md:space-x-2 my-2">
-              <button className=" bg-white px-2 py-1 rounded-xl m-1">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.shuribusapp.shuri_parent&hl=en&gl=US"
+                target="_blank"
+                className=" bg-white flex w-32 px-2 py-1 rounded-xl m-1"
+              >
                 <svg
                   className="w-24"
                   width="153"
@@ -534,8 +534,12 @@ function index() {
                     fill="#808285"
                   />
                 </svg>
-              </button>
-              <button className="flex bg-white  px-2 py-1 rounded-xl space-x-2 items-center m-1">
+              </a>
+              <a
+                href="https://apps.apple.com/cy/app/shuri-bus/id1569817308"
+                target="_blank"
+                className="no-underline flex w-32 bg-white  px-2 py-1 rounded-xl space-x-2 items-center m-1"
+              >
                 <svg
                   width="36"
                   height="37"
@@ -566,7 +570,7 @@ function index() {
                   </defs>
                 </svg>
                 <p className="text-xs text-gray-700">App store</p>
-              </button>
+              </a>
             </div>
           </div>
           <div className="relative">

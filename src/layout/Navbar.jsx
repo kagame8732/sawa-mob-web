@@ -36,7 +36,7 @@ function Navbar(props) {
         (location?.pathname === "/"
           ? " bg-darkblue text-whitecolor "
           : " bg-white border text-darkergray ") +
-        "px-6 sm:px-10  md:px-20 sticky top-0 z-20"
+        "px-6 sm:px-10  md:px-20 sticky top-0 z-20 nav-bar"
       }
     >
       <nav className="flex justify-between items-center ">

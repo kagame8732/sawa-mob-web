@@ -27,7 +27,7 @@ function Schools() {
     <div className="pb-20">
       <div className="schools-hero ">
         <div className="bg-transparent absolute z-10 w-100 p-10 md:p-32 text-white grid grid-cols-1 md:grid-cols-2">
-          <div className="space-y-10 p-6">
+          <div className="space-y-10 sm:p-6">
             <h5 className="text-5xl font-black fade-in appear leading-7">
               ShuriBus
             </h5>
@@ -35,10 +35,14 @@ function Schools() {
               Providing safer, cheaper and more reliable STUDENTS transportation
               services.
             </p>
-            <button className="button-fade flex items-center space-x-3 bg-darkblue hover:opacity-70 py-3 px-10 rounded-xl ">
+            <a
+              href="https://shuribusapp.com/"
+              target="_blank"
+              className="w-56 no-underline hover:text-white button-fade flex items-center space-x-3 bg-darkblue hover:opacity-70 py-3 px-10 rounded-xl "
+            >
               <p className="text-lg ">Get started</p>
               <HiArrowRight />
-            </button>
+            </a>
           </div>
           <div className="zoom-in appear ">
             <img
@@ -73,8 +77,8 @@ function Schools() {
         </div>
       </div>
       <div className="bg-yellow-500 my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10  ">
-        <div className="align-self-center space-y-10 text-white px-10 lg:px-20 pt-20 md:h-80">
-          <h5 className="font-black text-3xl  ">
+        <div className="align-self-center space-y-10 text-white px-6 sm:px-10 lg:px-20 pt-20 md:h-80">
+          <h5 className="font-black text-2xl sm:text-3xl  ">
             Affordable Monthly subscriptions
           </h5>
           <p className="text-base ">

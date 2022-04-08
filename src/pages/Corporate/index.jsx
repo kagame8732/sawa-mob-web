@@ -23,10 +23,15 @@ function Corporate() {
               Providing the best way to manage transportation for groups such as
               Students, Office Staff, event attendees etc.
             </p>
-            <button className=" button-fade fade-in-down appear flex items-center space-x-3 bg-darkblue hover:opacity-70 py-3 px-10 rounded-xl ">
+            <a
+              // href="http://176.58.112.151:3031/"
+              href="#"
+              target="_blank"
+              className="no-underline w-56 hover:text-white button-fade fade-in-down appear flex items-center space-x-3 bg-darkblue hover:opacity-70 py-3 px-10 rounded-xl "
+            >
               <p className="text-lg">Get started</p>
               <HiArrowRight />
-            </button>
+            </a>
           </div>
           <div className="zoom-in appear">
             <img src={phoneImg} alt="Shuri Bus App" className="" />
@@ -34,7 +39,7 @@ function Corporate() {
         </div>
       </div>
       <div className="mx-10 md:mx-20 my-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="align-self-center space-y-10 text-darkblue">
+        <div className="align-self-center space-y-10  text-darkblue">
           <h5 className="font-black text-3xl text-darkblue ">
             Total Organisation of company’s Mobility
           </h5>
@@ -50,8 +55,8 @@ function Corporate() {
         </div>
       </div>
       <div className="bg-lightblue my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="align-self-center space-y-10 text-white p-10">
-          <h5 className="font-black text-3xl ">
+        <div className="align-self-center space-y-10 text-white px-6 sm:px-10 lg:px-20 pt-20">
+          <h5 className="font-black text-2xl sm:text-3xl ">
             Total Organisation of company’s Mobility
           </h5>
           <p className="text-base ">

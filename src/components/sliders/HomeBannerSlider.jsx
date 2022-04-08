@@ -18,7 +18,11 @@ function HomeBannerSlider({ message, phoneImg }) {
           id="action"
           className="md:flex items-center px-6 md:px-0 py-6 action-btn"
         >
-          <button className="bg-white px-3 m-2  rounded-md">
+          <a
+            href="https://apps.apple.com/cy/app/shuri-bus/id1569817308"
+            target="_blank"
+            className="flex w-40 bg-white px-3 m-2  rounded-md no-underline"
+          >
             <svg
               className="h-12"
               width="137"
@@ -32,8 +36,12 @@ function HomeBannerSlider({ message, phoneImg }) {
                 fill="#13223C"
               />
             </svg>
-          </button>
-          <button className="bg-white px-3 m-2 rounded-md">
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.shuribusapp.shuri_parent&hl=en&gl=US"
+            target="_blank"
+            className="flex w-40 bg-white px-3 m-2 rounded-md"
+          >
             <svg
               className="h-12"
               width="136"
@@ -183,7 +191,7 @@ function HomeBannerSlider({ message, phoneImg }) {
                 </linearGradient>
               </defs>
             </svg>
-          </button>
+          </a>
         </div>
         <div className="relative img-fade">
           <img
@@ -192,12 +200,6 @@ function HomeBannerSlider({ message, phoneImg }) {
             className=" absolute bottom-28 sm:left-60 md:bottom-0  md:left-0 lg:left-32 z-10  "
             // style={{ maxHeight: "513px" }}
           />
-          {/* <img
-            src={phoneImg3}
-            alt="Phone app"
-            className=" absolute bottom-10 md:left-28 lg:left-80 "
-            style={{ maxHeight: "525px" }}
-          /> */}
         </div>
       </div>
     </div>
