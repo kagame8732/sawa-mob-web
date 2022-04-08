@@ -24,7 +24,7 @@ function index() {
     <div className="pb-6 ">
       <div className=" about-hero flex items-center overflow-hidden">
         <img src={herobackImg} className=" absolute z-10" />
-        <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 flex flex-col md:flex-row  items-center space-x-3 md:space-x-10 space-y-10 md:space-y-0 text-white">
+        <div className=" container bg-transparent  z-10 w-100 p-10 lg:px-20 flex flex-col md:flex-row justify-center items-center space-x-3 md:space-x-10 space-y-10 md:space-y-0 text-white">
           {/* <div className=" container bg-transparent absolute z-10 w-100 p-10 lg:px-20 grid items-center space-x-3 text-white"> */}
           <div className=" flex flex-col space-y-4 ">
             <div className="align-self-start">

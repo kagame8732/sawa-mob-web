@@ -266,18 +266,29 @@ body {
   width: 100%;
   z-index: 1;
 }
-@media (max-width: 378px) {
+@media (max-width: 465px) {
   .about-hero {
-    height: 450px;
+    height: 760px;
   }
   .about-hero::before {
-    height: 450px;
+    height: 750px;
   }
   .about-hero::after {
     left: 0%;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 465px) {
+  .about-hero {
+    height: 900px;
+  }
+  .about-hero::before {
+    height: 900px;
+  }
+  .about-hero::after {
+    left: 10%;
+  }
+}
+@media (min-width: 768px) {
   .about-hero {
     height: 760px;
   }

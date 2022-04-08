@@ -2,8 +2,8 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="bg-darkbluishgray flex justify-center items-center  py-36">
-      <div className="grid grid-cols-1 md:grid-cols-2">
+    <div className="bg-darkbluishgray flex justify-center items-center py-20  md:py-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-20">
         <div className="space-y-10">
           <div className="space-y-6">
             <h5 className="text-lightblue text-lg font-bold"> Contacts</h5>
@@ -93,8 +93,11 @@ function Contact() {
           </div>
         </div>
         <div>
-          <h5 className="text-lightblue text-lg font-bold"> Reach out to us</h5>
-          <form className="space-y-3">
+          <h5 className="text-lightblue text-lg font-bold ">
+            {" "}
+            Reach out to us
+          </h5>
+          <form className="space-y-3 py-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <div>
                 <label htmlFor="full-name" className="sr-only">
