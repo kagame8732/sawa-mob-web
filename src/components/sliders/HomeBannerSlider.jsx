@@ -4,7 +4,7 @@ function HomeBannerSlider({ message, phoneImg }) {
   return (
     <div>
       <div className="home-banner flex md:items-center pt-24 md:pt-0 ">
-        <div className=" md:w-1/2 lg:w-3/6 md:align-self-end md:pb-32 pl-16 md:pl-20 lg:pl-36 xl:pl-48 text-white z-10">
+        <div className=" md:w-1/2 lg:w-3/6 md:align-self-end md:pt-32 pl-16 md:pl-20 lg:pl-36 xl:pl-48 text-white z-10">
           <h2
             id="message"
             className="md:text-3xl  text-2xl w-52 md:w-100 font-bold"
