@@ -14,7 +14,7 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-darkergray  "
             : " hover:text-darkergray  ") +
-          " py-9 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          " py-10 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >
@@ -27,7 +27,7 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-darkergray  "
             : " hover:text-darkergray  ") +
-          " py-9 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          " py-10 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >
@@ -40,7 +40,7 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-darkergray  "
             : " hover:text-darkergray  ") +
-          " py-9 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          " py-10 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >
@@ -53,7 +53,7 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-darkergray  "
             : " hover:text-darkergray  ") +
-          " py-9 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          " py-10 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >
@@ -66,7 +66,7 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-darkergray  "
             : " hover:text-darkergray  ") +
-          " py-9 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          " py-10 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >
@@ -79,7 +79,7 @@ function DefaultMenu() {
           (location?.pathname === "/"
             ? " hover:text-darkergray  "
             : " hover:text-darkergray  ") +
-          " py-9 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+          " py-10 px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >

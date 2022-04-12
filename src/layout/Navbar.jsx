@@ -63,7 +63,7 @@ function Navbar(props) {
               " py-4 px-2 font-semibold text-lg uppercase "
             }
           >
-            <img src={sawaLogo} alt="Logo " className="object-cover w-60" />
+            <img src={sawaLogo} alt="Logo " className="object-cover w-64" />
             {/* SAWA MOBILITY */}
           </NavLink>
         </div>
