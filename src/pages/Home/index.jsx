@@ -26,7 +26,7 @@ function index() {
   return (
     <div>
       <div className="home">
-        <Carousel indicators={true} interval={5000}>
+        <Carousel indicators={true} interval={null}>
           <Carousel.Item className="w-100">
             <HomeBannerSlider
               message={"Never worry about “How do I get there?”"}

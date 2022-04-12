@@ -8,6 +8,7 @@ import DefaultMenu from "../components/navbar/DefaultMenu";
 import { ImMenu } from "react-icons/im";
 import MobileMenu from "../components/navbar/MobileMenu";
 import { onChangeLocation } from "../store/actions";
+import sawaLogo from "../assets/images/logo sawa.png";
 function Navbar(props) {
   const { locations, selectedLocation } = useSelector(
     ({ Locations }) => Locations
@@ -34,7 +35,7 @@ function Navbar(props) {
     <header
       className={
         (location?.pathname === "/"
-          ? " bg-darkblue text-whitecolor "
+          ? " bg-white text-darkergray "
           : " bg-white border text-darkergray ") +
         "px-6 sm:px-10  md:px-20 sticky top-0 z-20 nav-bar"
       }
@@ -51,18 +52,19 @@ function Navbar(props) {
           </button>
         ) : null} */}
 
-        <div>
+        <div className="-my-4 md:-ml-6">
           <NavLink
             eaxct
             to="/"
             className={
               (location?.pathname === "/"
-                ? " hover:text-whitecolor  "
+                ? " hover:text-darkergray  "
                 : " hover:text-darkergray  ") +
               " py-4 px-2 font-semibold text-lg uppercase "
             }
           >
-            SAWA MOBILITY
+            <img src={sawaLogo} alt="Logo " className="object-cover w-60" />
+            {/* SAWA MOBILITY */}
           </NavLink>
         </div>
         <div className="hidden lg:block">
@@ -74,7 +76,7 @@ function Navbar(props) {
             variant=""
             className={
               (location?.pathname === "/"
-                ? "text-whitecolor  "
+                ? "text-darkergray  "
                 : "text-darkergray  ") +
               "   border-0 focus:outline-none focus:ring-0  py-4 px-4 hidden  lg:flex"
             }

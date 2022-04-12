@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.8b8af655.chunk.css",
-    "main.js": "/static/js/main.906376d2.chunk.js",
-    "main.js.map": "/static/js/main.906376d2.chunk.js.map",
+    "main.js": "/static/js/main.d7c90440.chunk.js",
+    "main.js.map": "/static/js/main.d7c90440.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d269d147.js",
     "runtime-main.js.map": "/static/js/runtime-main.d269d147.js.map",
     "static/css/2.383c0125.chunk.css": "/static/css/2.383c0125.chunk.css",
@@ -27,6 +27,7 @@
     "static/media/finances.c8d87228.png": "/static/media/finances.c8d87228.png",
     "static/media/hire1.a0638552.png": "/static/media/hire1.a0638552.png",
     "static/media/hire2.1861b659.png": "/static/media/hire2.1861b659.png",
+    "static/media/logo sawa.49bc2c7c.png": "/static/media/logo sawa.49bc2c7c.png",
     "static/media/map-img.faffc379.png": "/static/media/map-img.faffc379.png",
     "static/media/map.304196c4.png": "/static/media/map.304196c4.png",
     "static/media/nostalgie.5bff59aa.png": "/static/media/nostalgie.5bff59aa.png",
@@ -54,6 +55,6 @@
     "static/css/2.383c0125.chunk.css",
     "static/js/2.1d54128e.chunk.js",
     "static/css/main.8b8af655.chunk.css",
-    "static/js/main.906376d2.chunk.js"
+    "static/js/main.d7c90440.chunk.js"
   ]
 }

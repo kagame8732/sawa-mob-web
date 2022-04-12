@@ -378,7 +378,7 @@ function index() {
             shapes the future of mobility with client success at the forefront.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 text-bluishgray">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-bluishgray">
           <div>
             <div className="flex  justify-center">
               <img
@@ -411,19 +411,7 @@ function index() {
               </p>
             </div>
           </div>
-          <div>
-            <div className="flex  justify-center">
-              <img
-                src={teamImg3}
-                alt="team member"
-                className="object-cover relative"
-              />
-            </div>
-            <div className="border-t-2 border-whitecolor py-1 px-3 ">
-              <h5 className="font-bold text-sm text-center">ALEX Ntale</h5>
-              <p className="text-xs text-center text-blackblue">Advisor</p>
-            </div>
-          </div>
+
           <div>
             <div className="flex  justify-center">
               <img
