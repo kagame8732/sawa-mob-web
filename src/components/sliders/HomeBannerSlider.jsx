@@ -4,27 +4,27 @@ function HomeBannerSlider({ message, phoneImg }) {
   return (
     <div>
       <div className="home-banner flex md:items-center pt-24 md:pt-0 ">
-        <div className=" md:w-1/2 lg:w-3/6 md:align-self-end md:pt-72 pl-16 md:pl-20 lg:pl-36 xl:pl-48 text-white z-10">
+        <div className=" md:w-1/2 lg:w-3/6 md:align-self-end md:pt-72 pl-10 sm:pl-16 md:pl-20 lg:pl-36 xl:pl-48 text-white z-10">
           <h2
             id="message"
-            className="md:text-3xl  text-2xl w-52 md:w-72 font-bold"
+            className="md:text-3xl  text-2xl lg:text-5xl  w-56 md:w-72 lg:w-96 font-bold"
           >
             {message}
           </h2>
         </div>
       </div>
-      <div className="px-10 md:px-1.5 lg:px-20 grid grid-cols-1 md:grid-cols-2   bg-lightblue">
+      <div className="px-10 md:px-1.5 lg:px-20 grid grid-cols-1 md:grid-cols-2 bg-lightblue align-content-center action">
         <div
           id="action"
-          className="md:flex items-center px-6 md:px-0 py-6 action-btn"
+          className="-mx-8 flex  md:mx-0 items-center px-2.5 sm:px-6 md:px-0  action-btn"
         >
           <a
             href="https://apps.apple.com/cy/app/shuri-bus/id1569817308"
             target="_blank"
-            className="flex w-40 bg-white px-3 m-2  rounded-md no-underline"
+            className="flex w-28 sm:w-40 bg-white px-3 m-2 py-1  rounded-md no-underline"
           >
             <svg
-              className="h-12"
+              // className="h-12"
               width="137"
               height="34"
               viewBox="0 0 137 34"
@@ -40,10 +40,10 @@ function HomeBannerSlider({ message, phoneImg }) {
           <a
             href="https://play.google.com/store/apps/details?id=com.shuribusapp.shuri_parent&hl=en&gl=US"
             target="_blank"
-            className="flex w-40 bg-white px-3 m-2 rounded-md"
+            className="flex w-28 sm:w-40 bg-white px-3 py-1 m-2 rounded-md"
           >
             <svg
-              className="h-12"
+              // className="w-20 sm:w-40"
               width="136"
               height="32"
               viewBox="0 0 136 32"
@@ -197,7 +197,7 @@ function HomeBannerSlider({ message, phoneImg }) {
           <img
             src={phoneImg}
             alt="Phone app"
-            className=" absolute bottom-28 sm:left-60 md:bottom-0  md:left-0 lg:left-32 z-10  "
+            className=" absolute bottom-14 sm:left-60 md:bottom-0  md:left-0 lg:left-32 z-10  "
             // style={{ maxHeight: "513px" }}
           />
         </div>

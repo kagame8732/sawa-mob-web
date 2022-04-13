@@ -39,10 +39,11 @@ function Navbar(props) {
           : " bg-white border text-darkergray ") +
         "px-6 sm:px-10  md:px-20 sticky top-0 z-20 nav-bar"
       }
+      style={{ height: "10vh" }}
     >
       <nav className="flex justify-between items-center ">
         <div className="lg:hidden">
-          <button onClick={() => setShowMobileNav(true)} className="py-6">
+          <button onClick={() => setShowMobileNav(true)} className="py-4">
             <ImMenu className="text-xl" />
           </button>
         </div>
@@ -52,7 +53,7 @@ function Navbar(props) {
           </button>
         ) : null} */}
 
-        <div className="-my-4 md:-ml-6">
+        <div className="-my-4 md:-ml-6 w-64">
           <NavLink
             eaxct
             to="/"
@@ -63,7 +64,11 @@ function Navbar(props) {
               " py-4 px-2 font-semibold text-lg uppercase "
             }
           >
-            <img src={sawaLogo} alt="Logo " className="object-cover w-64" />
+            <img
+              src={sawaLogo}
+              alt="Logo "
+              className="object-cover w-64 absolute sm:top-1.5 px-10 sm:px-0"
+            />
             {/* SAWA MOBILITY */}
           </NavLink>
         </div>
@@ -78,7 +83,7 @@ function Navbar(props) {
               (location?.pathname === "/"
                 ? "text-darkergray  "
                 : "text-darkergray  ") +
-              "   border-0 focus:outline-none focus:ring-0  py-4 px-4 hidden  lg:flex"
+              "   border-0 focus:outline-none focus:ring-0  py-3.5 px-4 hidden  lg:flex"
             }
             id="dropdown-basic"
           >

@@ -38,7 +38,7 @@ function Corporate() {
           </div>
         </div>
       </div>
-      <div className="mx-10 md:mx-20 my-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="mx-10 md:mx-20 my-10 grid grid-cols-1 md:grid-cols-2 gap-10 ">
         <div className="align-self-center space-y-10  text-darkblue">
           <h5 className="font-black text-3xl text-darkblue ">
             Total Organisation of company’s Mobility
@@ -54,7 +54,7 @@ function Corporate() {
           <img src={statisticsImg} alt="Statistics " className="" />
         </div>
       </div>
-      <div className="bg-lightblue my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="bg-lightblue my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10 ">
         <div className="align-self-center space-y-10 text-white px-6 sm:px-10 lg:px-20 pt-20">
           <h5 className="font-black text-2xl sm:text-3xl ">
             Total Organisation of company’s Mobility

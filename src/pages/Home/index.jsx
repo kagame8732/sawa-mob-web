@@ -48,8 +48,10 @@ function index() {
         </Carousel>
       </div>
       <div className="lg:px-40 px-6 sm:px-10 md:px-20 py-10 space-y-16">
-        <div className="bg-indigo-50 flex flex-wrap px-10 lg:space-x-1 relative">
-          <div className="flex-1 pt-16 pb-10 space-y-10 px-0.5 sm:px-6 lg:px-0">
+        {" "}
+        <div className="bg-indigo-50 md:flex flex-wrap px-10 lg:space-x-1 relative mt-6 md:mt-0">
+          {/* <div className="flex-1 pt-16 pb-10 space-y-10 px-0.5 sm:px-6 lg:px-0"> */}
+          <div className="flex-1 pt-6 pb-6 md:pb-3 space-y-6 md:space-y-10 px-0.5 sm:px-6 lg:px-0">
             <h5 className="text-2xl text-navyblue font-bold">Our Solution</h5>
             <p className="text-bluishgray text-base font-semibold">
               {" "}
@@ -59,179 +61,182 @@ function index() {
           <div>
             <img
               src={sawamobServices}
-              alt="Swa Mob Services"
-              // className="max-h-72 object-cover"
+              alt="Swa Mob Services "
+              className="max-h-44 md:max-h-60  object-cover"
             />
           </div>
-          <div className="flex-1 p-10 md:pt-16 pb-52 text-end md:text-start">
+          {/* <div className="flex-1 p-10 md:pt-16 pb-52 text-end md:text-start"> */}
+          <div className="flex-1 p-6 md:pt-6 pb-48 sm:pb-6 text-end md:text-start">
             <p className="text-bluishgray text-base font-semibold">
               .....and tailored to your need?
             </p>
             <img
               src={phoneUserImg}
               alt="Phone user"
-              className="object-cover max-h-48 absolute bottom-0 right-0 "
+              className="object-cover md:max-h-48 max-h-40 absolute bottom-0 right-0 "
             />
           </div>
         </div>
-
-        <div className=" grid grid-cols-1 md:grid-cols-3  py-10 lg:pt-36 lg:pb-10 px-10 lg:px-20  gap-6 md:gap-10  lg:gap-32">
-          <div className="flex flex-col">
-            <svg
-              // className="align-self-center w-16 h-16 mb-3.5"
-              className="align-self-center "
-              width="84"
-              height="84"
-              viewBox="0 0 84 84"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M61.6791 63.0117C57.654 63.0115 54.3792 59.7369 54.3792 55.7118V43.5888C54.3792 39.5636 57.654 36.289 61.6791 36.289H80.7001C80.8154 36.289 80.9299 36.2925 81.0438 36.2977V24.2212C81.0438 21.1125 78.5238 18.5925 75.4152 18.5925H5.62881C2.52001 18.5923 0 21.1124 0 24.221V75.0794C0 78.188 2.52001 80.7082 5.62881 80.7082H75.4152C78.5238 80.7082 81.0438 78.1882 81.0438 75.0794V63.0029C80.9299 63.0082 80.8154 63.0117 80.7001 63.0117H61.6791Z"
-                fill="#2E8BC0"
-              />
-              <path
-                d="M80.7001 40.2889H61.6791C59.8567 40.2889 58.3793 41.7663 58.3793 43.5887V55.7118C58.3793 57.5342 59.8567 59.0116 61.6791 59.0116H80.7001C82.5226 59.0116 84 57.5344 84 55.7118V43.5887C84 41.7662 82.5226 40.2889 80.7001 40.2889ZM68.2334 54.4129C65.603 54.4129 63.4706 52.2806 63.4706 49.6501C63.4706 47.0196 65.603 44.8872 68.2334 44.8872C70.8639 44.8872 72.9963 47.0196 72.9963 49.6501C72.9963 52.2806 70.8639 54.4129 68.2334 54.4129Z"
-                fill="#2E8BC0"
-              />
-              <path
-                d="M65.6143 8.28199C64.3551 4.47046 60.2444 2.40147 56.433 3.66075L27.8378 13.1079H67.2087L65.6143 8.28199Z"
-                fill="#2E8BC0"
-              />
-            </svg>
-            <h5 className="text-navyblue text-xl text-center font-bold lg:px-7 py-3">
-              All Transport in one Wallet
-            </h5>
-            <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-sm leading-8 blackblue">
-              One Payment System which offer you a True freedom of mobility.
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <svg
-              // className="align-self-center w-16 h-20"
-              className="align-self-center "
-              width="85"
-              height="85"
-              viewBox="0 0 85 85"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_442_112)">
+        <div className="h-screenheight md:h-auto flex ">
+          <div className=" grid grid-cols-1 md:grid-cols-3 lg:pb-10 px-10 lg:px-20  gap-6 md:gap-10  lg:gap-32">
+            {/* <div className=" grid grid-cols-1 md:grid-cols-3  py-10 lg:pt-36 lg:pb-10 px-10 lg:px-20  gap-6 md:gap-10  lg:gap-32"> */}
+            <div className="flex flex-col">
+              <svg
+                className="align-self-center w-16 h-10 mb-3.5"
+                // className="align-self-center "
+                width="84"
+                height="84"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  d="M35.6409 71.3693C39.2454 71.3693 42.8672 70.817 46.4033 69.7028C55.492 66.8391 62.9215 60.6074 67.3232 52.1555C71.7251 43.704 72.5718 34.0439 69.7084 24.9551C66.8446 15.8664 60.6129 8.43689 52.1611 4.03516C34.7138 -5.05119 13.1272 1.75013 4.04086 19.1973C3.35786 20.5087 3.86737 22.1257 5.17873 22.8083C6.48975 23.4913 8.10674 22.9822 8.78972 21.6705C16.5123 6.84232 34.8589 1.06133 49.6876 8.78419C56.8711 12.5253 62.1673 18.8397 64.6014 26.5644C67.0355 34.2891 66.3157 42.4992 62.5745 49.6824C58.8334 56.8659 52.519 62.1621 44.7943 64.5962C37.0698 67.03 28.8595 66.3105 21.6763 62.5693C14.1216 58.6349 8.54053 51.6518 6.36374 43.4107C5.62946 40.6307 5.29295 37.7688 5.3635 34.9045C5.39986 33.4265 4.23128 32.1987 2.75324 32.162C1.27006 32.1296 0.0473557 33.2942 0.0106659 34.7722C-0.0725098 38.1423 0.323105 41.5085 1.18672 44.778C3.74751 54.4734 10.3141 62.689 19.2029 67.3182C24.3663 70.0068 29.9816 71.369 35.6409 71.3693Z"
-                  fill="#FFC61B"
+                  d="M61.6791 63.0117C57.654 63.0115 54.3792 59.7369 54.3792 55.7118V43.5888C54.3792 39.5636 57.654 36.289 61.6791 36.289H80.7001C80.8154 36.289 80.9299 36.2925 81.0438 36.2977V24.2212C81.0438 21.1125 78.5238 18.5925 75.4152 18.5925H5.62881C2.52001 18.5923 0 21.1124 0 24.221V75.0794C0 78.188 2.52001 80.7082 5.62881 80.7082H75.4152C78.5238 80.7082 81.0438 78.1882 81.0438 75.0794V63.0029C80.9299 63.0082 80.8154 63.0117 80.7001 63.0117H61.6791Z"
+                  fill="#2E8BC0"
                 />
                 <path
-                  d="M35.681 54.1201C25.4946 54.1201 17.2368 45.8624 17.2368 35.676C17.2368 25.4896 25.4946 17.2319 35.681 17.2319C45.8674 17.2319 54.1251 25.4896 54.1251 35.676C54.1251 45.8624 45.8674 54.1201 35.681 54.1201Z"
-                  fill="#FEE187"
+                  d="M80.7001 40.2889H61.6791C59.8567 40.2889 58.3793 41.7663 58.3793 43.5887V55.7118C58.3793 57.5342 59.8567 59.0116 61.6791 59.0116H80.7001C82.5226 59.0116 84 57.5344 84 55.7118V43.5887C84 41.7662 82.5226 40.2889 80.7001 40.2889ZM68.2334 54.4129C65.603 54.4129 63.4706 52.2806 63.4706 49.6501C63.4706 47.0196 65.603 44.8872 68.2334 44.8872C70.8639 44.8872 72.9963 47.0196 72.9963 49.6501C72.9963 52.2806 70.8639 54.4129 68.2334 54.4129Z"
+                  fill="#2E8BC0"
                 />
                 <path
-                  d="M35.6822 56.7977C47.3285 56.7977 56.8035 47.3227 56.8035 35.6764C56.8035 24.03 47.3283 14.5551 35.6822 14.5551C24.036 14.5551 14.5609 24.03 14.5609 35.6764C14.5609 47.3228 24.0359 56.7977 35.6822 56.7977ZM35.6822 19.9097C44.3761 19.9097 51.4491 26.9828 51.4491 35.6767C51.4491 44.3706 44.3762 51.4437 35.6822 51.4437C26.9881 51.4437 19.9152 44.3708 19.9152 35.6767C19.9152 26.9826 26.9883 19.9097 35.6822 19.9097Z"
-                  fill="#FFC61B"
+                  d="M65.6143 8.28199C64.3551 4.47046 60.2444 2.40147 56.433 3.66075L27.8378 13.1079H67.2087L65.6143 8.28199Z"
+                  fill="#2E8BC0"
                 />
-                <path
-                  d="M75.6156 84.9945C78.0961 84.9945 80.4853 84.0115 82.2512 82.2458C84.1641 80.3328 85.1585 77.6874 84.9794 74.9883C84.8002 72.2889 83.4648 69.7983 81.3159 68.1548L70.347 59.7668C69.281 58.9517 67.7764 59.0518 66.8276 60.0003L60.0059 66.822C59.0571 67.7708 58.9571 69.2757 59.7724 70.3414L68.1604 81.3103C69.8039 83.4592 72.2945 84.7946 74.9939 84.9738C75.2012 84.9875 75.4089 84.9945 75.6156 84.9945ZM68.9564 65.4436L78.0633 72.4077C79.0002 73.1239 79.5585 74.1662 79.6367 75.3424C79.7149 76.5188 79.2988 77.6258 78.4651 78.4595C77.6314 79.2932 76.5252 79.7093 75.348 79.6311C74.1716 79.5529 73.1294 78.9944 72.4135 78.0579L65.4492 68.9506L68.9564 65.4436Z"
-                  fill="#FFC61B"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_442_112">
-                  <rect
-                    width="85"
-                    height="85"
-                    fill="white"
-                    transform="matrix(-1 0 0 1 85 0)"
+              </svg>
+              <h5 className="text-navyblue text-base text-center font-bold lg:px-7 py-1">
+                All Transport in one Wallet
+              </h5>
+              <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-xs leading-6 blackblue">
+                One Payment System which offer you a True freedom of mobility.
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <svg
+                // className="align-self-center w-16 h-20"
+                className="align-self-center w-16 h-10 mb-3.5"
+                width="85"
+                height="85"
+                viewBox="0 0 85 85"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_442_112)">
+                  <path
+                    d="M35.6409 71.3693C39.2454 71.3693 42.8672 70.817 46.4033 69.7028C55.492 66.8391 62.9215 60.6074 67.3232 52.1555C71.7251 43.704 72.5718 34.0439 69.7084 24.9551C66.8446 15.8664 60.6129 8.43689 52.1611 4.03516C34.7138 -5.05119 13.1272 1.75013 4.04086 19.1973C3.35786 20.5087 3.86737 22.1257 5.17873 22.8083C6.48975 23.4913 8.10674 22.9822 8.78972 21.6705C16.5123 6.84232 34.8589 1.06133 49.6876 8.78419C56.8711 12.5253 62.1673 18.8397 64.6014 26.5644C67.0355 34.2891 66.3157 42.4992 62.5745 49.6824C58.8334 56.8659 52.519 62.1621 44.7943 64.5962C37.0698 67.03 28.8595 66.3105 21.6763 62.5693C14.1216 58.6349 8.54053 51.6518 6.36374 43.4107C5.62946 40.6307 5.29295 37.7688 5.3635 34.9045C5.39986 33.4265 4.23128 32.1987 2.75324 32.162C1.27006 32.1296 0.0473557 33.2942 0.0106659 34.7722C-0.0725098 38.1423 0.323105 41.5085 1.18672 44.778C3.74751 54.4734 10.3141 62.689 19.2029 67.3182C24.3663 70.0068 29.9816 71.369 35.6409 71.3693Z"
+                    fill="#FFC61B"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <h5 className="text-navyblue text-xl text-center font-bold lg:px-10 py-3">
-              Less Hassle
-            </h5>
-            <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-sm leading-8 blackblue">
-              One Intermodal System which is Taking Away the pain of “how do I
-              get there?”.
-            </p>
-          </div>
-          <div className="flex flex-col">
-            <svg
-              // className="align-self-center w-20 h-20"
-              className="align-self-center"
-              width="135"
-              height="86"
-              viewBox="0 0 135 86"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_442_150)">
-                <path
-                  d="M83.3911 55.8133C83.3911 57.1359 84.6921 58.207 86.2984 58.207H91.3788C92.985 58.207 94.286 57.1359 94.286 55.8133V52.8271H83.3911V55.8133Z"
-                  fill="#F6821F"
-                />
-                <path
-                  d="M37.4492 55.8133C37.4492 57.1359 38.7502 58.207 40.3565 58.207H45.4369C47.0431 58.207 48.3441 57.1359 48.3441 55.8133V52.8271H37.4492V55.8133Z"
-                  fill="#F6821F"
-                />
-                <path
-                  d="M34.9054 24.5932V10.1052C34.2222 9.74618 33.4154 9.46492 32.456 9.29137C31.3222 9.0879 30.2538 9.80004 30.2538 10.7515V19.8417C30.2538 22.1756 32.2453 24.1205 34.9054 24.5932Z"
-                  fill="#F6821F"
-                />
-                <path
-                  d="M99.2792 9.29137C98.327 9.46492 97.513 9.74618 96.8298 10.1052V24.5932C99.49 24.1205 101.481 22.1756 101.481 19.8477V10.7515C101.481 9.80004 100.413 9.0879 99.2792 9.29137Z"
-                  fill="#F6821F"
-                />
-                <path
-                  d="M94.286 49.2366V24.7009V12.4092V3.81572C94.286 2.49319 92.985 1.422 91.3787 1.422H40.3565C38.7502 1.422 37.4492 2.49319 37.4492 3.81572V12.4092V24.7009V49.2366V50.7326H48.3441H83.391H94.286V49.2366ZM43.4672 45.2869V40.1404C52.1817 40.1404 54.3258 45.2869 54.3258 45.2869H43.4672ZM65.6714 30.7271C64.9882 30.1586 64.0578 29.8414 63.0839 29.8414H43.46L43.5326 6.44277H88.188V34.0184V36.5258H72.6342L65.6714 30.7271ZM77.344 45.2869C77.344 45.2869 79.4881 40.1404 88.2025 40.1404V45.2869H77.344Z"
-                  fill="#F6821F"
-                />
-              </g>
-              <path
-                d="M134.074 82.5385L99.9426 57.9506C99.3024 57.4899 97.5925 57.1863 95.6717 57.1952L39.5553 57.4571C37.6342 57.4661 35.929 57.7857 35.2985 58.2523L1.48762 83.305C1.00993 83.6615 1.22668 84.0522 2.08 84.3551C2.92696 84.6564 4.30402 84.8324 5.7707 84.8256L130.029 84.2457C130.052 84.2456 130.065 84.2455 130.073 84.2455C132.571 84.2338 134.589 83.7052 134.582 83.0665C134.578 82.876 134.397 82.6955 134.074 82.5385Z"
-                fill="#F6821F"
-              />
-              <path
-                d="M130.045 84.2202C130.068 84.2201 130.08 84.2201 130.088 84.22C132.58 84.2082 134.593 83.6798 134.586 83.0414C134.584 82.851 134.401 82.6706 134.082 82.5137L100.03 57.9418C99.3914 57.4814 97.6859 57.1781 95.7699 57.1872L39.7964 57.4528C37.8802 57.4619 36.1794 57.7814 35.5506 58.2479"
-                fill="#F6821F"
-              />
-              <path
-                d="M69.5124 61.9731C69.5162 62.2303 68.7082 62.4429 67.7044 62.4465C66.7006 62.45 65.8865 62.2432 65.8828 61.986L65.8442 59.3179C65.8404 59.0596 66.6484 58.8481 67.6522 58.8445C68.656 58.8409 69.4701 59.0467 69.4738 59.3049L69.5124 61.9731Z"
-                fill="white"
-              />
-              <path
-                d="M69.5797 68.832C69.5834 69.0893 68.7754 69.3018 67.7716 69.3054C66.7678 69.309 65.9538 69.1021 65.9501 68.845L65.9115 66.1768C65.9078 65.9185 66.7158 65.707 67.7196 65.7034C68.7234 65.6998 69.5374 65.9056 69.5411 66.1638L69.5797 68.832Z"
-                fill="white"
-              />
-              <path
-                d="M69.6471 75.6914C69.6508 75.9486 68.8428 76.1612 67.839 76.1647C66.8352 76.1683 66.0212 75.9614 66.0175 75.7043L65.9789 73.0361C65.9752 72.7779 66.7832 72.5663 67.787 72.5628C68.7908 72.5592 69.6049 72.765 69.6086 73.0232L69.6471 75.6914Z"
-                fill="white"
-              />
-              <path
-                d="M69.7146 82.5508C69.7183 82.808 68.9103 83.0206 67.9065 83.0242C66.9027 83.0277 66.0887 82.8209 66.085 82.5637L66.0464 79.8955C66.0427 79.6372 66.8507 79.4257 67.8545 79.4221C68.8583 79.4186 69.6723 79.6243 69.6761 79.8826L69.7146 82.5508Z"
-                fill="white"
-              />
-              <defs>
-                <clipPath id="clip0_442_150">
-                  <rect
-                    width="71.2277"
-                    height="58.6462"
-                    fill="white"
-                    transform="translate(30.2538 0.491455)"
+                  <path
+                    d="M35.681 54.1201C25.4946 54.1201 17.2368 45.8624 17.2368 35.676C17.2368 25.4896 25.4946 17.2319 35.681 17.2319C45.8674 17.2319 54.1251 25.4896 54.1251 35.676C54.1251 45.8624 45.8674 54.1201 35.681 54.1201Z"
+                    fill="#FEE187"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <h5 className="text-navyblue text-xl text-center font-bold lg:px-7 py-3">
-              ETA & Route Optimisation
-            </h5>
-            <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-sm leading-8 blackblue">
-              No more waitingfor a bus you don’t know when it’s coming.
-            </p>
+                  <path
+                    d="M35.6822 56.7977C47.3285 56.7977 56.8035 47.3227 56.8035 35.6764C56.8035 24.03 47.3283 14.5551 35.6822 14.5551C24.036 14.5551 14.5609 24.03 14.5609 35.6764C14.5609 47.3228 24.0359 56.7977 35.6822 56.7977ZM35.6822 19.9097C44.3761 19.9097 51.4491 26.9828 51.4491 35.6767C51.4491 44.3706 44.3762 51.4437 35.6822 51.4437C26.9881 51.4437 19.9152 44.3708 19.9152 35.6767C19.9152 26.9826 26.9883 19.9097 35.6822 19.9097Z"
+                    fill="#FFC61B"
+                  />
+                  <path
+                    d="M75.6156 84.9945C78.0961 84.9945 80.4853 84.0115 82.2512 82.2458C84.1641 80.3328 85.1585 77.6874 84.9794 74.9883C84.8002 72.2889 83.4648 69.7983 81.3159 68.1548L70.347 59.7668C69.281 58.9517 67.7764 59.0518 66.8276 60.0003L60.0059 66.822C59.0571 67.7708 58.9571 69.2757 59.7724 70.3414L68.1604 81.3103C69.8039 83.4592 72.2945 84.7946 74.9939 84.9738C75.2012 84.9875 75.4089 84.9945 75.6156 84.9945ZM68.9564 65.4436L78.0633 72.4077C79.0002 73.1239 79.5585 74.1662 79.6367 75.3424C79.7149 76.5188 79.2988 77.6258 78.4651 78.4595C77.6314 79.2932 76.5252 79.7093 75.348 79.6311C74.1716 79.5529 73.1294 78.9944 72.4135 78.0579L65.4492 68.9506L68.9564 65.4436Z"
+                    fill="#FFC61B"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_442_112">
+                    <rect
+                      width="85"
+                      height="85"
+                      fill="white"
+                      transform="matrix(-1 0 0 1 85 0)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h5 className="text-navyblue text-base text-center font-bold lg:px-10 py-1">
+                Less Hassle
+              </h5>
+              <p className="sm:px-16 md:px-0 md:py-6 my-2 text-center font-semibold text-xs leading-6 blackblue">
+                One Intermodal System which is Taking Away the pain of “how do I
+                get there?”.
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <svg
+                // className="align-self-center w-20 h-20"
+                className="align-self-center w-16 h-10 mb-3.5"
+                width="135"
+                height="86"
+                viewBox="0 0 135 86"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_442_150)">
+                  <path
+                    d="M83.3911 55.8133C83.3911 57.1359 84.6921 58.207 86.2984 58.207H91.3788C92.985 58.207 94.286 57.1359 94.286 55.8133V52.8271H83.3911V55.8133Z"
+                    fill="#F6821F"
+                  />
+                  <path
+                    d="M37.4492 55.8133C37.4492 57.1359 38.7502 58.207 40.3565 58.207H45.4369C47.0431 58.207 48.3441 57.1359 48.3441 55.8133V52.8271H37.4492V55.8133Z"
+                    fill="#F6821F"
+                  />
+                  <path
+                    d="M34.9054 24.5932V10.1052C34.2222 9.74618 33.4154 9.46492 32.456 9.29137C31.3222 9.0879 30.2538 9.80004 30.2538 10.7515V19.8417C30.2538 22.1756 32.2453 24.1205 34.9054 24.5932Z"
+                    fill="#F6821F"
+                  />
+                  <path
+                    d="M99.2792 9.29137C98.327 9.46492 97.513 9.74618 96.8298 10.1052V24.5932C99.49 24.1205 101.481 22.1756 101.481 19.8477V10.7515C101.481 9.80004 100.413 9.0879 99.2792 9.29137Z"
+                    fill="#F6821F"
+                  />
+                  <path
+                    d="M94.286 49.2366V24.7009V12.4092V3.81572C94.286 2.49319 92.985 1.422 91.3787 1.422H40.3565C38.7502 1.422 37.4492 2.49319 37.4492 3.81572V12.4092V24.7009V49.2366V50.7326H48.3441H83.391H94.286V49.2366ZM43.4672 45.2869V40.1404C52.1817 40.1404 54.3258 45.2869 54.3258 45.2869H43.4672ZM65.6714 30.7271C64.9882 30.1586 64.0578 29.8414 63.0839 29.8414H43.46L43.5326 6.44277H88.188V34.0184V36.5258H72.6342L65.6714 30.7271ZM77.344 45.2869C77.344 45.2869 79.4881 40.1404 88.2025 40.1404V45.2869H77.344Z"
+                    fill="#F6821F"
+                  />
+                </g>
+                <path
+                  d="M134.074 82.5385L99.9426 57.9506C99.3024 57.4899 97.5925 57.1863 95.6717 57.1952L39.5553 57.4571C37.6342 57.4661 35.929 57.7857 35.2985 58.2523L1.48762 83.305C1.00993 83.6615 1.22668 84.0522 2.08 84.3551C2.92696 84.6564 4.30402 84.8324 5.7707 84.8256L130.029 84.2457C130.052 84.2456 130.065 84.2455 130.073 84.2455C132.571 84.2338 134.589 83.7052 134.582 83.0665C134.578 82.876 134.397 82.6955 134.074 82.5385Z"
+                  fill="#F6821F"
+                />
+                <path
+                  d="M130.045 84.2202C130.068 84.2201 130.08 84.2201 130.088 84.22C132.58 84.2082 134.593 83.6798 134.586 83.0414C134.584 82.851 134.401 82.6706 134.082 82.5137L100.03 57.9418C99.3914 57.4814 97.6859 57.1781 95.7699 57.1872L39.7964 57.4528C37.8802 57.4619 36.1794 57.7814 35.5506 58.2479"
+                  fill="#F6821F"
+                />
+                <path
+                  d="M69.5124 61.9731C69.5162 62.2303 68.7082 62.4429 67.7044 62.4465C66.7006 62.45 65.8865 62.2432 65.8828 61.986L65.8442 59.3179C65.8404 59.0596 66.6484 58.8481 67.6522 58.8445C68.656 58.8409 69.4701 59.0467 69.4738 59.3049L69.5124 61.9731Z"
+                  fill="white"
+                />
+                <path
+                  d="M69.5797 68.832C69.5834 69.0893 68.7754 69.3018 67.7716 69.3054C66.7678 69.309 65.9538 69.1021 65.9501 68.845L65.9115 66.1768C65.9078 65.9185 66.7158 65.707 67.7196 65.7034C68.7234 65.6998 69.5374 65.9056 69.5411 66.1638L69.5797 68.832Z"
+                  fill="white"
+                />
+                <path
+                  d="M69.6471 75.6914C69.6508 75.9486 68.8428 76.1612 67.839 76.1647C66.8352 76.1683 66.0212 75.9614 66.0175 75.7043L65.9789 73.0361C65.9752 72.7779 66.7832 72.5663 67.787 72.5628C68.7908 72.5592 69.6049 72.765 69.6086 73.0232L69.6471 75.6914Z"
+                  fill="white"
+                />
+                <path
+                  d="M69.7146 82.5508C69.7183 82.808 68.9103 83.0206 67.9065 83.0242C66.9027 83.0277 66.0887 82.8209 66.085 82.5637L66.0464 79.8955C66.0427 79.6372 66.8507 79.4257 67.8545 79.4221C68.8583 79.4186 69.6723 79.6243 69.6761 79.8826L69.7146 82.5508Z"
+                  fill="white"
+                />
+                <defs>
+                  <clipPath id="clip0_442_150">
+                    <rect
+                      width="71.2277"
+                      height="58.6462"
+                      fill="white"
+                      transform="translate(30.2538 0.491455)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h5 className="text-navyblue text-base text-center font-bold lg:px-7 py-1">
+                ETA & Route Optimisation
+              </h5>
+              <p className="sm:px-16 md:px-0 my-2 text-center font-semibold text-xs leading-6 blackblue">
+                No more waitingfor a bus you don’t know when it’s coming.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="lg:px-32 px-6 sm:px-10 md:px-20 py-10 ">
-        <div className="flex  justify-center">
-          <h2 className="text-3xl w-60 lg:w-96 text-center font-bold text-darkblack">
+      <div className="lg:px-32 px-6 sm:px-10 md:px-20 py-2 ">
+        {/* <div className="flex  justify-center">
+          <h2 className="text-2xl w-60 lg:w-96 text-center font-bold text-darkblack">
             All- in one Platform For All Transport Means
           </h2>
         </div>
@@ -240,22 +245,26 @@ function index() {
             Make your trips easy with our all-in-one app that simplifies your
             process and gives you cheap offers.
           </p>
-        </div>
-        <div className="mt-32">
-          <h2 className="text-darkblue text-3xl my-3 mx-10 md:mx-20 font-bold">
+        </div> */}
+        <div className="mt-10">
+          <h2 className="text-darkblue text-xl my-3 mx-10 md:mx-20 font-bold">
             Mobility as a Service
           </h2>
-          <div className=" grid grid-cols-1 sm:grid-cols-2 bg-lightblue rounded-2xl sm:mr-16 ">
-            <div className="m-10 md:mx-20 text-white grid grid-cols-1 md:grid-cols-3 gap-4">
-              <ul className="list-disc col-span-2  font-semibold leading-9">
+          <div className=" grid grid-cols-1 sm:grid-cols-3 bg-lightblue rounded-2xl sm:mr-16 ">
+            <div className="m-10 text-white grid grid-cols-1 md:grid-cols-4 md:gap-4 col-span-2">
+              <ul className="list-disc  text-sm  font-semibold leading-6">
                 <li>All in one App</li>
                 <li>Transport Packages</li>
+              </ul>
+              <ul className="list-disc  text-sm  font-semibold leading-6">
                 <li>Customer Experience</li>
                 <li>Transport Wallet</li>
               </ul>
-              <ul className="list-disc  font-semibold leading-9">
+              <ul className="list-disc  text-sm  font-semibold leading-6">
                 <li>ETA</li>
                 <li>Payments</li>
+              </ul>
+              <ul className="list-disc text-sm font-semibold leading-6">
                 <li>Routing</li>
               </ul>
             </div>
@@ -268,13 +277,14 @@ function index() {
               <img
                 src={subtractElipseImg}
                 alt="Phone app"
-                className="hidden sm:block absolute bottom-0 max-h-56 md:max-h-72 lg:max-h-80 -right-20 "
+                // className="hidden sm:block absolute bottom-0 max-h-56 md:max-h-72 lg:max-h-80 -right-20 md:max-h-52 lg:max-h-64"
+                className="hidden sm:block absolute bottom-0 max-h-56  -right-20 md:max-h-52 lg:max-h-64"
               />
             </div>
           </div>
         </div>
-        <div className="  bg-indigo-50 rounded-2xl space-y-4 mt-16">
-          <h5 className="text-bluishgray font-bold text-lg text-center pt-4">
+        <div className="  bg-indigo-50 rounded-2xl space-y-2 mt-10">
+          <h5 className="text-bluishgray font-bold text-sm text-center pt-2">
             Transportation Providers
           </h5>
 
@@ -282,19 +292,19 @@ function index() {
             <img
               src={arrowUpImg}
               alt="Up arrow"
-              className="absolute left-0 max-h-20 md:max-h-24 md:left-10 lg:left-20 bottom-0"
+              className="absolute left-0 max-h-14 md:left-10 lg:left-20 bottom-0"
             />
             <hr className="text-bluishgray w-100 " />
             <img
               src={arrowUpImg}
               alt="Up arrow"
-              className="absolute right-0 max-h-20 md:max-h-24 md:right-10 lg:right-20 bottom-0"
+              className="absolute right-0 max-h-14 md:right-10 lg:right-20 bottom-0"
             />
           </div>
-          <div className="flex flex-wrap justify-around items-center p-6 space-x-3 space-y-4 md:space-y-0">
+          <div className="flex flex-wrap justify-around items-center px-6 space-x-3 space-y-4 md:space-y-0">
             <svg
               // className="w-14"
-              className="w-8 mb-2"
+              className="w-9 "
               width="67"
               height="56"
               viewBox="0 0 67 56"
@@ -336,32 +346,32 @@ function index() {
             <img
               src={tapGoMinImg}
               alt="Tap & Go Logo"
-              className="object-cover max-h-7"
+              className="object-cover max-h-6"
             />
             <img
               src={kbsLogoImg}
               alt="KBS Logo"
-              className="object-cover max-h-7"
+              className="object-cover max-h-6"
             />
             <img
               src={voxwgnLogoImg}
               alt="Vox wgn Logo"
-              className="object-cover max-h-7"
+              className="object-cover max-h-6"
             />
             <img
               src={yegoLogoImg}
               alt="Yego Logo"
-              className="object-cover max-h-7"
+              className="object-cover max-h-6"
             />
             <img
               src={rftcLogoImg}
               alt="rftc Logo"
-              className="object-cover max-h-7"
+              className="object-cover max-h-6"
             />
             <img
               src={volcanoLogoImg}
               alt="Volcano Logo"
-              className="object-cover max-h-7"
+              className="object-cover max-h-6"
             />
             <img
               src={royalexpressLogoImg}
@@ -369,18 +379,18 @@ function index() {
               className="object-cover max-h-9"
             />
           </div>
-          <p className="text-bluishgray text-sm font-semibold text-center p-2">
+          <p className="text-bluishgray text-xs font-semibold text-center px-2 pb-2">
             Many More..
           </p>
         </div>
-        <div className="  bg-indigo-50 rounded-2xl space-y-4 my-6 ">
-          <h5 className="text-lightdarkblue font-bold text-lg text-center pt-4 ">
+        <div className="  bg-indigo-50 rounded-2xl space-y-2 my-3 ">
+          <h5 className="text-lightdarkblue font-bold text-sm text-center pt-2 ">
             Infrastructure
           </h5>
           <hr className="text-lightdarkblue w-100 " />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center sm:mx-10 md:mx-32 p-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center sm:mx-10 md:mx-32 ">
             <svg
-              className=" w-14"
+              className=" w-8"
               width="73"
               height="71"
               viewBox="0 0 73 71"
@@ -393,7 +403,7 @@ function index() {
               />
             </svg>
             <svg
-              className=" w-14"
+              className=" w-8"
               width="86"
               height="67"
               viewBox="0 0 86 67"
@@ -414,7 +424,7 @@ function index() {
               />
             </svg>
             <svg
-              className=" w-14"
+              className=" w-8"
               width="76"
               height="68"
               viewBox="0 0 76 68"
@@ -435,7 +445,7 @@ function index() {
               />
             </svg>
             <svg
-              className=" w-14"
+              className=" w-8"
               width="67"
               height="73"
               viewBox="0 0 67 73"

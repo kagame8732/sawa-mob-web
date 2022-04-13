@@ -41,26 +41,45 @@ body {
 }
 @media (max-width: 639px) {
   .home-banner {
-    height: 550px;
+    /* height: 550px; */
+    height: 80vh;
   }
   .home-banner::after {
-    height: 550px;
+    /* height: 550px; */
+    height: 80vh;
   }
 }
 @media (min-width: 639px) {
   .home-banner {
-    height: 478px;
+    /* height: 478px; */
+    height: 74vh;
   }
   .home-banner::after {
-    height: 478px;
+    /* height: 478px; */
+    height: 74vh;
   }
 }
-@media (max-width: 507px) {
+@media (max-width: 639px) {
+  .home .action {
+    height: 10vh;
+  }
+}
+@media (min-width: 639px) {
+  .home .action {
+    height: 16vh;
+  }
+}
+/* @media (max-width: 507px) {
   .home .img-fade img {
     bottom: 12rem;
   }
+} */
+@media (max-width: 640px) {
+  .home .img-fade img {
+    max-height: 24rem;
+  }
 }
-@media (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 768px) {
   .home .img-fade img {
     max-height: 24rem;
   }
@@ -82,6 +101,9 @@ body {
 .home:hover .carousel-control-next {
   display: flex;
 } */
+.home .carousel-indicators {
+  bottom: -10px;
+}
 .home .carousel-control-next {
   width: 2rem;
   height: 2rem;
