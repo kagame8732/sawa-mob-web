@@ -39,7 +39,7 @@ function Navbar(props) {
           : " bg-white border text-darkergray ") +
         "px-6 sm:px-10  md:px-20 sticky top-0 z-20 nav-bar"
       }
-      style={{ height: "10vh" }}
+      style={{ minHeight: "10vh" }}
     >
       <nav className="flex justify-between items-center ">
         <div className="lg:hidden">
