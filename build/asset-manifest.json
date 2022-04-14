@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.9859a890.chunk.css",
-    "main.js": "/static/js/main.c50fb85c.chunk.js",
-    "main.js.map": "/static/js/main.c50fb85c.chunk.js.map",
+    "main.js": "/static/js/main.c9c357aa.chunk.js",
+    "main.js.map": "/static/js/main.c9c357aa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d269d147.js",
     "runtime-main.js.map": "/static/js/runtime-main.d269d147.js.map",
     "static/css/2.383c0125.chunk.css": "/static/css/2.383c0125.chunk.css",
@@ -32,7 +32,7 @@
     "static/media/map.304196c4.png": "/static/media/map.304196c4.png",
     "static/media/nostalgie.5bff59aa.png": "/static/media/nostalgie.5bff59aa.png",
     "static/media/phone.32a0bdf6.png": "/static/media/phone.32a0bdf6.png",
-    "static/media/phone1.ee0cddf2.png": "/static/media/phone1.ee0cddf2.png",
+    "static/media/phone1.4b497321.png": "/static/media/phone1.4b497321.png",
     "static/media/phone2.686b7b72.png": "/static/media/phone2.686b7b72.png",
     "static/media/phone3.57f6aa17.png": "/static/media/phone3.57f6aa17.png",
     "static/media/phones1.229cb030.png": "/static/media/phones1.229cb030.png",
@@ -52,6 +52,6 @@
     "static/css/2.383c0125.chunk.css",
     "static/js/2.1d54128e.chunk.js",
     "static/css/main.9859a890.chunk.css",
-    "static/js/main.c50fb85c.chunk.js"
+    "static/js/main.c9c357aa.chunk.js"
   ]
 }
