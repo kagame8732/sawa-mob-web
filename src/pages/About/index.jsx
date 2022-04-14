@@ -35,19 +35,31 @@ function index() {
             </div>
             <div className=" pl-16">
               <div className="">
-                <img src={transportImg} alt="Transport " className="" />
+                <img
+                  src={transportImg}
+                  alt="Transport "
+                  className="max-h-40 md:max-h-full"
+                />
               </div>
             </div>
           </div>
-          <div>
-            <img src={nextDirection} alt="Transport " className="" />
+          <div className="mt-3">
+            <img
+              src={nextDirection}
+              alt="Next Direction "
+              className="max-h-8 md:max-h-full"
+            />
           </div>
-          <div className=" flex flex-col space-y-4">
+          <div className=" flex flex-col space-y-4 mt-0">
             <div className="align-self-start relative">
               <div className="">
-                <img src={africaImg} alt="Transport " className="" />
+                <img
+                  src={africaImg}
+                  alt="Africa"
+                  className="max-h-56 md:max-h-full lg:-ml-16 "
+                />
               </div>
-              <div className="absolute top-32 sm:top-48 md:top-40 md:left-0 -left-10 lg:left-96 lg:top-52 lg:w-56 w-40">
+              <div className="absolute top-32 sm:top-28 md:top-40 md:left-0 -left-10 lg:left-48 xl:left-64 lg:top-52 lg:w-56 w-40">
                 <h5 className="font-bold text-lg">Tommorow</h5>
                 <p className="text-sm px-2">
                   Ultimate freedom of mobility tailored to your need.
@@ -57,14 +69,14 @@ function index() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-50  py-10  px-20 md:px-32 space-y-10">
+      <div className="bg-gray-50  py-10  px-20 md:px-32 space-y-6">
         <h2 className="text-darkblue font-black text-3xl text-center my-2">
           What we are Building
         </h2>
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex flex-col items-center">
             <svg
-              className="w-32 "
+              className="w-24 h-12"
               width="211"
               height="120"
               viewBox="0 0 211 120"
@@ -98,13 +110,13 @@ function index() {
               />
             </svg>
 
-            <p className="font-bold text-sm leading-7 text-darkblue my-2 ">
+            <p className="font-bold text-sm leading-5 text-darkblue my-3 pl-6">
               A simple and easy customer experience at the core.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <svg
-              className="w-32"
+              className="w-24 h-12"
               width="211"
               height="113"
               viewBox="0 0 211 113"
@@ -157,14 +169,14 @@ function index() {
                 fill="#434A54"
               />
             </svg>
-            <p className="font-bold text-sm leading-7 text-darkblue my-3">
+            <p className="font-bold text-sm leading-5 text-darkblue my-3">
               Variety of operators and transport providers,in one platform, one
               single App.
             </p>
           </div>
           <div className="flex flex-col items-center">
             <svg
-              className="w-32"
+              className="w-24 h-12"
               width="211"
               height="118"
               viewBox="0 0 211 118"
@@ -218,14 +230,14 @@ function index() {
               </defs>
             </svg>
 
-            <p className="font-bold text-sm leading-7 text-darkblue my-2">
+            <p className="font-bold text-sm leading-5 text-darkblue my-3">
               Door to Door Journeys, all your trips, from A to B to Z with an
               enjoyable experience .
             </p>
           </div>
           <div className="flex flex-col items-center">
             <svg
-              className="w-32"
+              className="w-24 h-12"
               width="211"
               height="120"
               viewBox="0 0 211 120"
@@ -254,7 +266,7 @@ function index() {
                 </clipPath>
               </defs>
             </svg>
-            <p className="font-bold text-sm leading-7 text-darkblue my-2">
+            <p className="font-bold text-sm leading-5 text-darkblue my-3">
               Payment and ticketing handled in the background, all your tickets
               in one place..
             </p>
@@ -262,7 +274,7 @@ function index() {
         </div>
       </div>
 
-      <div className="bg-gray-50  py-20  px-6 sm:px-10 mb-16 sm:mb-0 md:px-32">
+      <div className="bg-gray-50  py-20 md:py-6  px-6 sm:px-10 mb-16 sm:mb-0 md:px-32">
         <div className="relative flex justify-end h-96 md:h-auto">
           <div className="bg-darkblue  p-10   absolute md:max-w-sm top-60 md:top-20 md:left-0 z-10 ">
             <h5 className="text-lg font-bold text-white my-3">

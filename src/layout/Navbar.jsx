@@ -43,7 +43,10 @@ function Navbar(props) {
     >
       <nav className="flex justify-between items-center ">
         <div className="lg:hidden">
-          <button onClick={() => setShowMobileNav(true)} className="py-4">
+          <button
+            onClick={() => setShowMobileNav(true)}
+            className="py-4 sm:py-4"
+          >
             <ImMenu className="text-xl" />
           </button>
         </div>

@@ -290,10 +290,12 @@ body {
 }
 @media (max-width: 465px) {
   .about-hero {
-    height: 760px;
+    /* height: 760px; */
+    height: 90vh;
   }
   .about-hero::before {
-    height: 750px;
+    /* height: 750px; */
+    height: 90vh;
   }
   .about-hero::after {
     left: 0%;
@@ -301,10 +303,12 @@ body {
 }
 @media (min-width: 465px) {
   .about-hero {
-    height: 900px;
+    /* height: 900px; */
+    height: 90vh;
   }
   .about-hero::before {
-    height: 900px;
+    /* height: 900px; */
+    height: 90vh;
   }
   .about-hero::after {
     left: 10%;
@@ -312,10 +316,12 @@ body {
 }
 @media (min-width: 768px) {
   .about-hero {
-    height: 760px;
+    /* height: 760px; */
+    height: 90vh;
   }
   .about-hero::before {
-    height: 750px;
+    /* height: 750px; */
+    height: 90vh;
   }
   .about-hero::after {
     left: 15%;
@@ -323,26 +329,18 @@ body {
 }
 @media (min-width: 768px) {
   .about-hero {
-    height: 560px;
+    /* height: 560px; */
+    height: 90vh;
   }
   .about-hero::before {
-    height: 560px;
+    /* height: 560px; */
+    height: 90vh;
   }
   .about-hero::after {
     left: 30%;
   }
 }
-@media (min-width: 768px) {
-  .about-hero {
-    height: 560px;
-  }
-  .about-hero::before {
-    height: 560px;
-  }
-  .about-hero::after {
-    left: 30%;
-  }
-}
+
 .about-hero .carousel-inner {
   display: flex;
 }

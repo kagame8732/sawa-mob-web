@@ -7,6 +7,7 @@ import busImg2 from "../../assets/images/staff bus 1.png";
 import phoneImg1 from "../../assets/images/phone1.png";
 import phoneImg2 from "../../assets/images/phone2.png";
 import phoneImg3 from "../../assets/images/phone3.png";
+import phoneImg4 from "../../assets/images/phone4.png";
 import phoneImg from "../../assets/images/phone.png";
 import sawamobServices from "../../assets/images/sawamob-services.png";
 import phoneUserImg from "../../assets/images/phoneuser.png";
@@ -16,7 +17,7 @@ import MobilepartsSlider from "../../components/sliders/MobilepartsSlider";
 import HomeBannerSlider from "../../components/sliders/HomeBannerSlider";
 import tapGoMinImg from "../../assets/images/TapGologomin2.png";
 import kbsLogoImg from "../../assets/images/kbslogo.png";
-import voxwgnLogoImg from "../../assets/images/kbslogo.png";
+import voxwgnLogoImg from "../../assets/images/vox-move-Logo.png";
 import yegoLogoImg from "../../assets/images/yegologo.png";
 import rftcLogoImg from "../../assets/images/rftclogo.png";
 import volcanoLogoImg from "../../assets/images/volcanologo.png";
@@ -26,7 +27,13 @@ function index() {
   return (
     <div>
       <div className="home">
-        <Carousel indicators={true} interval={null}>
+        <Carousel indicators={true} interval={5000}>
+          <Carousel.Item className="w-100">
+            <HomeBannerSlider
+              message={"Giving you a true freedom of mobility. "}
+              phoneImg={phoneImg4}
+            />
+          </Carousel.Item>
           <Carousel.Item className="w-100">
             <HomeBannerSlider
               message={"Never worry about “How do I get there?”"}
@@ -283,7 +290,7 @@ function index() {
             </div>
           </div>
         </div>
-        <div className="  bg-indigo-50 rounded-2xl space-y-2 mt-10">
+        <div className="  bg-indigo-50 rounded-2xl space-y-2 mt-6">
           <h5 className="text-bluishgray font-bold text-sm text-center pt-2">
             Transportation Providers
           </h5>
@@ -292,19 +299,19 @@ function index() {
             <img
               src={arrowUpImg}
               alt="Up arrow"
-              className="absolute left-0 max-h-14 md:left-10 lg:left-20 bottom-0"
+              className="absolute left-0 max-h-10 md:left-10 lg:left-20 bottom-0"
             />
             <hr className="text-bluishgray w-100 " />
             <img
               src={arrowUpImg}
               alt="Up arrow"
-              className="absolute right-0 max-h-14 md:right-10 lg:right-20 bottom-0"
+              className="absolute right-0 max-h-10 md:right-10 lg:right-20 bottom-0"
             />
           </div>
           <div className="flex flex-wrap justify-around items-center px-6 space-x-3 space-y-4 md:space-y-0">
             <svg
               // className="w-14"
-              className="w-9 "
+              className="w-7 h-7 "
               width="67"
               height="56"
               viewBox="0 0 67 56"
@@ -346,7 +353,7 @@ function index() {
             <img
               src={tapGoMinImg}
               alt="Tap & Go Logo"
-              className="object-cover max-h-6"
+              className="object-cover max-h-5"
             />
             <img
               src={kbsLogoImg}
@@ -356,7 +363,7 @@ function index() {
             <img
               src={voxwgnLogoImg}
               alt="Vox wgn Logo"
-              className="object-cover max-h-6"
+              className="object-cover w-6"
             />
             <img
               src={yegoLogoImg}
@@ -388,9 +395,9 @@ function index() {
             Infrastructure
           </h5>
           <hr className="text-lightdarkblue w-100 " />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center sm:mx-10 md:mx-32 ">
+          <div className="pb-2 grid grid-cols-4 md:grid-cols-4 gap-4 justify-items-center sm:mx-10 md:mx-32 ">
             <svg
-              className=" w-8"
+              className=" w-8 h-8"
               width="73"
               height="71"
               viewBox="0 0 73 71"
@@ -403,7 +410,7 @@ function index() {
               />
             </svg>
             <svg
-              className=" w-8"
+              className=" w-8 h-8"
               width="86"
               height="67"
               viewBox="0 0 86 67"
@@ -424,7 +431,7 @@ function index() {
               />
             </svg>
             <svg
-              className=" w-8"
+              className=" w-8 h-8"
               width="76"
               height="68"
               viewBox="0 0 76 68"
@@ -445,7 +452,7 @@ function index() {
               />
             </svg>
             <svg
-              className=" w-8"
+              className=" w-8 h-8"
               width="67"
               height="73"
               viewBox="0 0 67 73"
@@ -498,7 +505,7 @@ function index() {
         />
       </div>
       <div className="lg:px-32 px-6 sm:px-10 md:px-20 py-10 space-y-20 md:space-y-32 products">
-        <h5 className="text-darkblack font-bold text-3xl text-center">
+        <h5 className="text-darkblack font-bold text-2xl text-center">
           Our Mobility Providers
         </h5>
 
