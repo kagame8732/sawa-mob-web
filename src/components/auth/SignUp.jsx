@@ -6,7 +6,15 @@ import { banks, districts } from "../../utils/data";
 function SignUp() {
   const [passport, setPassport] = useState(null);
   const [license, setLicense] = useState(null);
-  const [serviceType, setServiceType] = useState(null);
+  const [serviceType, setServiceType] = useState([
+    { name: "City transport", checked: false },
+    { name: "Intercity transport", checked: false },
+    { name: "Car rental", checked: false },
+    { name: "Student transport", checked: false },
+    { name: "Office staff pickup-drop-off", checked: false },
+    { name: "Airport shuttles", checked: false },
+    { name: "Package delivery", checked: false },
+  ]);
   return (
     <form className="flex flex-col space-y-10 px-6 signup">
       <div className="rounded-xs bg-blue-50 p-10 space-y-10">
@@ -152,7 +160,7 @@ function SignUp() {
 
               <label
                 htmlFor="driver-license"
-                className="overflow-auto cursor-pointer rounded-sm   border-dashed py-1 bg-white px-3  w-100 flex justify-between items-center"
+                className="overflow-auto cursor-pointer rounded-sm   border-dashed py-2 bg-white px-3  w-100 flex justify-between items-center"
               >
                 <div>
                   <p className="text-base text-darkblue  ">Driver’s Licence </p>
@@ -287,165 +295,41 @@ function SignUp() {
           </div>
         </div>
         <div className="space-y-6">
-          <h5 className="text-lg text-darkblue font-black">Bank Information</h5>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-            <div>
-              <label htmlFor="account-number" className="sr-only">
-                Account Number
-              </label>
-              <input
-                id="account-number"
-                name="account-number"
-                type="text"
-                autoComplete="account-number"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
-                placeholder="Account Number"
-              />
-            </div>
-
-            <div className=" bg-white">
-              <label htmlFor="account-type" className="sr-only">
-                Account Type
-              </label>
-              <input
-                id="account-type"
-                name="account-type"
-                type="text"
-                autoComplete="account-type"
-                required
-                className="flex-1 bg-white appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray  focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
-                placeholder="Account Type"
-              />
-            </div>
-            <div className=" bg-white">
-              <label htmlFor="bank" className="sr-only">
-                Bank
-              </label>
-              <Form.Select
-                id="bank"
-                className="text-base border-0 py-2 appearance-none focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10"
-              >
-                <option className="text-base text-lightgray" selected>
-                  Bank
-                </option>
-                {banks?.map((bank, index) => (
-                  <option
-                    className="text-base text-lightgray"
-                    key={index}
-                    value={bank?.name}
-                  >
-                    {bank.name ?? " "}
-                  </option>
-                ))}
-              </Form.Select>
-            </div>
-          </div>
-        </div>
-        <div className="space-y-6">
-          <h5 className="text-lg text-darkblue font-black">Route</h5>
+          <h5 className="text-lg text-darkblue font-black">
+            Interested services
+          </h5>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <div className="form-check px-9 py-1.5 bg-white rounded-1">
-              <input
-                className="form-check-input "
-                type="radio"
-                name="service-type"
-                id="car-rental"
-                value="Car rental"
-                selected={serviceType === "Car rental" ? true : false}
-                required
-                onChange={(e) => setServiceType(e.target.value)}
-              />
-              <label
-                className="form-check-label text-base text-darkblue"
-                for="car-rental"
+            {serviceType?.map((type, index) => (
+              <div
+                key={index}
+                className="form-check px-9 py-1.5 bg-white rounded-1"
               >
-                Car rental
-              </label>
-            </div>
+                <input
+                  className="form-check-input "
+                  type="checkbox"
+                  name="service-type"
+                  id={"type-" + index + 1}
+                  value={type?.name}
+                  selected={type?.checked === true ? true : false}
+                  required
+                  onChange={(e) => {
+                    var updatedCheckedServicesState = serviceType.slice();
+                    console.log("services:", updatedCheckedServicesState);
+                    updatedCheckedServicesState[index].checked = !type?.checked;
 
-            <div className="form-check px-9 py-1.5 bg-white rounded-1">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="service-type"
-                id="ride-sharing"
-                value="Ride sharing"
-                selected={serviceType === "Ride sharing" ? true : false}
-                required
-                onChange={(e) => setServiceType(e.target.value)}
-              />
-              <label
-                className="form-check-label text-base text-darkblue"
-                for="ride-sharing"
-              >
-                Round Treep
-              </label>
-            </div>
-
-            <div className="flex items-center bg-white pr-3 rounded-1">
-              <label htmlFor="student-transport" className="sr-only">
-                Student Transport
-              </label>
-              <input
-                type="text"
-                name="student-transport"
-                id="student-transport"
-                autoComplete="student-transport"
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
-                placeholder="Student Transport"
-              />
-
-              <IoLocationSharp className="text-base text-darkblue" />
-            </div>
-            <div className="flex items-center bg-white pr-3 rounded-1">
-              <label htmlFor="staff-pickup-drop-off" className="sr-only">
-                Office staff pickup & drop off
-              </label>
-              <input
-                type="text"
-                name="staff-pickup-drop-off"
-                id="staff-pickup-drop-off"
-                autoComplete="staff-pickup-drop-off"
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
-                placeholder=" Office staff pickup & drop off"
-              />
-
-              <IoLocationSharp className="text-base text-darkblue" />
-            </div>
-            <div className="flex items-center bg-white pr-3 rounded-1">
-              <label htmlFor="time" className="sr-only">
-                Entercity and long distance trips
-              </label>
-              <input
-                type="text"
-                name="time"
-                id="time"
-                autoComplete="time"
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
-                placeholder="Entercity and long distance trips"
-              />
-
-              <MdAccessTime className="text-base text-darkblue" />
-            </div>
-            <div className=" bg-white">
-              <label htmlFor="package-delivery" className="sr-only">
-                Package delivery
-              </label>
-              <input
-                id="package-delivery"
-                name="package-delivery"
-                type="number"
-                autoComplete="package-delivery"
-                required
-                className="flex-1 appearance-none rounded-none relative block w-full px-3 py-2.5 placeholder-lightgray text-lightgray rounded-b-md focus:outline-none focus:ring-darkblue focus:border-darkblue focus:z-10 text-base"
-                placeholder="Package delivery"
-              />
-            </div>
+                    setServiceType(updatedCheckedServicesState);
+                  }}
+                />
+                <label
+                  className="form-check-label text-base text-darkblue"
+                  for="car-rental"
+                >
+                  {type?.name}
+                </label>
+              </div>
+            ))}
           </div>
-
-          <div></div>
         </div>
         <p className="text-base px-6 text-lightgray">
           Please note that driver and car vetting process will be done before

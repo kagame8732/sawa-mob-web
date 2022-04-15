@@ -11,8 +11,8 @@ function Footer() {
         <div className="space-y-2 col-span-5 sm:col-span-2 md:col-span-1">
           <h5 className="font-bold text-lg ">Contact</h5>
           <div className="space-y-2">
-            <p className="text-sm">Phone - 0789878237</p>
-            <p className="text-sm">support@sawa.com</p>
+            <p className="text-sm">Phone - 0788302581</p>
+            <p className="text-sm">support@sawamobility.com</p>
           </div>
         </div>
         <div className="space-y-2 col-span-5 sm:col-span-3 md:col-span-2">

@@ -57,7 +57,7 @@ function DefaultMenu() {
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >
-        Corporate
+        For corporate
       </NavLink>
       <NavLink
         exact
@@ -70,7 +70,7 @@ function DefaultMenu() {
         }
         activeClassName=" border-opacity-100 border-lightblue"
       >
-        Schools
+        For schools
       </NavLink>
       <NavLink
         exact

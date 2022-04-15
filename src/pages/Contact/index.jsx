@@ -33,7 +33,7 @@ function Contact() {
                   fill="white"
                 />
               </svg>
-              <p className="text-sm">info@sawamobility.com</p>
+              <p className="text-sm">support@sawamobility.com</p>
             </div>
             <div className="flex items-center space-x-3 text-white">
               <svg

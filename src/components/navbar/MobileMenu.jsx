@@ -56,7 +56,7 @@ function MobileMenu({ setShowMobileNav }) {
           activeClassName=" border-opacity-100 border-lightblue"
           onClick={() => setShowMobileNav(false)}
         >
-          corporate
+          For corporate
         </NavLink>
         <NavLink
           exact
@@ -65,7 +65,7 @@ function MobileMenu({ setShowMobileNav }) {
           activeClassName=" border-opacity-100 border-lightblue"
           onClick={() => setShowMobileNav(false)}
         >
-          Schools
+          For schools
         </NavLink>
         <NavLink
           exact
