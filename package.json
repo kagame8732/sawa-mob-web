@@ -34,6 +34,7 @@
     "start": "npm run watch:css && react-scripts  start",
     "dev": "npm run watch:css && react-scripts   start",
     "build": "npm run watch:css && react-scripts build",
+    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch:css": "postcss src/assets/styles/css/tailwind.css -o src/assets/styles/css/output.css"
