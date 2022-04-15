@@ -38,7 +38,7 @@ function Corporate() {
           </div>
         </div>
       </div>
-      <div className="mx-10 md:mx-20 my-10 grid grid-cols-1 md:grid-cols-2 gap-10 ">
+      <div className="mx-10 md:mx-20 my-10 md:py-20 lg:py-32 grid grid-cols-1 md:grid-cols-2 gap-10 ">
         <div className="align-self-center space-y-10  text-darkblue">
           <h5 className="font-black text-3xl text-darkblue ">
             Total Organisation of company’s Mobility

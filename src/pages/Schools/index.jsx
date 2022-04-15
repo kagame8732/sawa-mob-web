@@ -55,7 +55,7 @@ function Schools() {
           </div>
         </div>
       </div>
-      <div className="px-10 my-10 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 ">
+      <div className="px-10 my-10 md:my-20 lg:my-32 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-10 ">
         <div
           // className={(isVisible ? " appear " : "") + "fade-left "}
           className=" fade-left "
@@ -77,7 +77,7 @@ function Schools() {
         </div>
       </div>
       <div className="bg-yellow-500 my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10  ">
-        <div className="align-self-center space-y-10 text-white px-6 sm:px-10 lg:px-20 pt-20 md:h-80">
+        <div className="align-self-center space-y-10 text-white px-6 sm:px-10 lg:px-20 pt-20 md:h-80 lg:h-96">
           <h5 className="font-black text-2xl sm:text-3xl  ">
             Affordable Monthly subscriptions
           </h5>

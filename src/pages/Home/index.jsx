@@ -85,7 +85,7 @@ function index() {
           </div>
         </div>
         <div className="h-screenheight md:h-auto flex ">
-          <div className=" grid grid-cols-1 md:grid-cols-3 lg:pb-10 px-10 lg:px-20  gap-6 md:gap-10  lg:gap-32">
+          <div className=" grid grid-cols-1 md:grid-cols-3 lg:pb-10 px-10 xl:px-20  gap-6 md:gap-10  lg:gap-32">
             {/* <div className=" grid grid-cols-1 md:grid-cols-3  py-10 lg:pt-36 lg:pb-10 px-10 lg:px-20  gap-6 md:gap-10  lg:gap-32"> */}
             <div className="flex flex-col">
               <svg
