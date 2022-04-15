@@ -9,7 +9,7 @@ import phoneImg2 from "../../assets/images/phone2.png";
 import phoneImg3 from "../../assets/images/phone3.png";
 import phoneImg4 from "../../assets/images/phone4.png";
 import phoneImg from "../../assets/images/phone.png";
-import sawamobServices from "../../assets/images/sawamob-services.png";
+import sawamobServices from "../../assets/images/app-collection-gif2.gif";
 import phoneUserImg from "../../assets/images/phoneuser.png";
 import subtractElipseImg from "../../assets/images/subtract-elipse.png";
 import { Carousel } from "react-bootstrap";
@@ -27,7 +27,7 @@ function index() {
   return (
     <div>
       <div className="home">
-        <Carousel indicators={true} interval={5000}>
+        <Carousel indicators={true} interval={3000}>
           <Carousel.Item className="w-100">
             <HomeBannerSlider
               message={"Giving you a true freedom of mobility. "}
@@ -74,13 +74,13 @@ function index() {
           </div>
           {/* <div className="flex-1 p-10 md:pt-16 pb-52 text-end md:text-start"> */}
           <div className="flex-1 p-6 md:pt-6 pb-48 sm:pb-6 text-end md:text-start">
-            <p className="text-bluishgray text-base font-semibold">
+            <p className="text-bluishgray text-base font-semibold sm:pr-20 md:pr-0">
               .....and tailored to your need?
             </p>
             <img
               src={phoneUserImg}
               alt="Phone user"
-              className="object-cover md:max-h-48 max-h-40 absolute bottom-0 right-0 "
+              className="object-cover  max-h-40 md:max-h-32 lg:max-h-40 absolute bottom-0 right-0 "
             />
           </div>
         </div>

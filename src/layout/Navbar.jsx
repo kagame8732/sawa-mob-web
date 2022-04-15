@@ -8,7 +8,7 @@ import DefaultMenu from "../components/navbar/DefaultMenu";
 import { ImMenu } from "react-icons/im";
 import MobileMenu from "../components/navbar/MobileMenu";
 import { onChangeLocation } from "../store/actions";
-import sawaLogo from "../assets/images/logo sawa.png";
+import sawaLogo from "../assets/images/logo.png";
 function Navbar(props) {
   const { locations, selectedLocation } = useSelector(
     ({ Locations }) => Locations
@@ -37,7 +37,7 @@ function Navbar(props) {
         (location?.pathname === "/"
           ? " bg-white text-darkergray "
           : " bg-white border text-darkergray ") +
-        "px-6 sm:px-10  md:px-20 sticky top-0 z-20 nav-bar"
+        "px-6 sm:px-10  md:px-20 lg:px-10 xl:px-20 sticky top-0 z-20 nav-bar"
       }
       style={{ minHeight: "10vh" }}
     >
@@ -45,7 +45,7 @@ function Navbar(props) {
         <div className="lg:hidden">
           <button
             onClick={() => setShowMobileNav(true)}
-            className="py-4 sm:py-4"
+            className="py-4 sm:py-4 pr-2.5 sm:pr-0"
           >
             <ImMenu className="text-xl" />
           </button>
@@ -70,9 +70,9 @@ function Navbar(props) {
             <img
               src={sawaLogo}
               alt="Logo "
-              className="object-cover w-64 absolute sm:top-1.5 px-10 sm:px-0"
+              className="object-cover h-20 top-2 absolute sm:top-1.5 sm:px-0"
             />
-            {/* SAWA MOBILITY */}
+            {/* SAWA MOBILITY px-10 */}
           </NavLink>
         </div>
         <div className="hidden lg:block">

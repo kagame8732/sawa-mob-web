@@ -14,8 +14,10 @@ function MobilepartsSlider() {
                 <img src={tapgologoImg} alt="Tap & Go logo" />
                 <p className="text-sm text-gray-500 py-2">
                   {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                  Traveling with cash has never been safe. With Tap&Go card, you
+                  don’t need cash to travel around Kigali. All you need is to
+                  top up your card using the Tap&Go App or agents. Tap&Go keeps
+                  your money safe for traveling. Easy. Convenient. Seamless.
                 </p>
               </div>
             </div>
@@ -26,8 +28,12 @@ function MobilepartsSlider() {
                 <img src={shuriBusLogoImg} alt="shuri bus logo" />
                 <p className="text-sm text-gray-500 py-2">
                   {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                  ShuriBus is a school transportation platform that connects
+                  parents, schools, and bus companies to offer the safest
+                  transportation experience to students by accessing real-time
+                  data of buses. We provide optimized transportation solutions
+                  to fulfill daily transportation needs. ShuriBus is a one-stop
+                  partner for all types of schools at all levels.
                 </p>
               </div>
             </div>
@@ -37,8 +43,9 @@ function MobilepartsSlider() {
               <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
                 <img src={tapgologo2Img} alt="Tap & Go logo" />
                 <p className="text-sm text-gray-500 py-2">
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                  With Tap&Go Ride, passengers are able to use the hailing app
+                  to call a moto and pay using their Tap&Go card at the end of
+                  the journey. Convenient. Faster. Safer
                 </p>
               </div>
             </div>
@@ -51,25 +58,32 @@ function MobilepartsSlider() {
             <div className="grid grid-cols-3 gap-3 px-20">
               <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
                 <img src={tapgologoImg} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
+                <p className="text-sm text-gray-500 p-6">
                   {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                  Traveling with cash has never been safe. With Tap&Go card, you
+                  don’t need cash to travel around Kigali. All you need is to
+                  top up your card using the Tap&Go App or agents. Tap&Go keeps
+                  your money safe for traveling. Easy. Convenient. Seamless.
                 </p>
               </div>
               <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
                 <img src={shuriBusLogoImg} alt="shuri bus logo" />
-                <p className="text-xs text-gray-500">
+                <p className="text-sm text-gray-500">
                   {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                  ShuriBus is a school transportation platform that connects
+                  parents, schools, and bus companies to offer the safest
+                  transportation experience to students by accessing real-time
+                  data of buses. We provide optimized transportation solutions
+                  to fulfill daily transportation needs. ShuriBus is a one-stop
+                  partner for all types of schools at all levels.
                 </p>
               </div>
               <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
                 <img src={tapgologo2Img} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                <p className="text-sm text-gray-500 p-11">
+                  With Tap&Go Ride, passengers are able to use the hailing app
+                  to call a moto and pay using their Tap&Go card at the end of
+                  the journey. Convenient. Faster. Safer
                 </p>
               </div>
             </div>
@@ -77,26 +91,33 @@ function MobilepartsSlider() {
           <Carousel.Item>
             <div className="grid grid-cols-3 gap-3 px-20">
               <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={tapgologoImg} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
+                <img src={tapgologoImg} alt="Tap & Go logo p-4" />
+                <p className="text-sm text-gray-500 p-6">
                   {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                  Traveling with cash has never been safe. With Tap&Go card, you
+                  don’t need cash to travel around Kigali. All you need is to
+                  top up your card using the Tap&Go App or agents. Tap&Go keeps
+                  your money safe for traveling. Easy. Convenient. Seamless.
                 </p>
               </div>
               <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
                 <img src={shuriBusLogoImg} alt="shuri bus logo" />
-                <p className="text-xs text-gray-500">
+                <p className="text-sm text-gray-500">
                   {" "}
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                  ShuriBus is a school transportation platform that connects
+                  parents, schools, and bus companies to offer the safest
+                  transportation experience to students by accessing real-time
+                  data of buses. We provide optimized transportation solutions
+                  to fulfill daily transportation needs. ShuriBus is a one-stop
+                  partner for all types of schools at all levels.
                 </p>
               </div>
               <div className=" flex flex-col justify-between items-center p-6 rounded-xl bg-white border-blue-50 border-t-2 border-l-0 border-r-4 border-b-4 space-y-3">
-                <img src={tapgologo2Img} alt="Tap & Go logo" />
-                <p className="text-xs text-gray-500">
-                  Consectetur eiusmod mollit et excepteur ea nisi nisi repr ehen
-                  derit quis
+                <img src={tapgologo2Img} alt="Tap & Go logo p-11" />
+                <p className="text-sm text-gray-500 p-11">
+                  With Tap&Go Ride, passengers are able to use the hailing app
+                  to call a moto and pay using their Tap&Go card at the end of
+                  the journey. Convenient. Faster. Safer
                 </p>
               </div>
             </div>
