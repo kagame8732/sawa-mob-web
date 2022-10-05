@@ -16,6 +16,7 @@ import herobackImg from "../../assets/images/map.png";
 import africaImg from "../../assets/images/africa 1.png";
 import nextDirection from "../../assets/images/next-direction.png";
 import cicleEllipse2 from "../../assets/images/circleEllipse2.png";
+import click from "../../assets/images/keyboard.png";
 import pushOperationsImg from "../../assets/images/push-operations.png";
 import platformImg from "../../assets/images/platform.png";
 import { MdOutlineLocationOn } from "react-icons/md";
@@ -273,10 +274,9 @@ function index() {
           </div>
         </div>
       </div>
-
-      <div className="bg-gray-50  py-20 md:py-6  px-6 sm:px-10 mb-16 sm:mb-0 md:px-32">
-        <div className="relative flex justify-end h-96 md:h-auto">
-          <div className="bg-darkblue  p-10   absolute md:max-w-sm top-60 md:top-20 md:left-0 z-10 ">
+      <div className="bg-gray-50  py-20 md:py-6  px-6 sm:px-10 mb-16 sm:mb-0 md:px-32 relative">
+        <div className="flex justify-end h-96 md:h-auto">
+          <div className="bg-darkblue p-10  absolute md:max-w-sm top-60 md:top-20 md:left-80 z-10">
             <h5 className="text-lg font-bold text-white my-3">
               Current Traction
             </h5>
@@ -285,11 +285,11 @@ function index() {
               routing
             </p>
           </div>
-          <div className="w-screen  justify-center  md:justify-end flex">
+          <div className="w-screen justify-center md:justify-end flex">
             <img
-              src={appuserImg1}
+              src={click}
               alt="app user"
-              className="  md:w-3/4 h-60 md:h-96 object-cover"
+              className="md:w-full h-96 object-cover"
             />
           </div>
         </div>
