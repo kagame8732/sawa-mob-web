@@ -43,6 +43,7 @@ module.exports = {
       darkbluishgray: "#033F63",
       blackblue: "#13223C",
       darkblack: "#0A1823",
+      orange: "#FFA500",
     },
     spacing: {
       px: "1px",

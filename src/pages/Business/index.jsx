@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 import statisticsImg from "../../assets/images/statistics.png";
 import financesImg from "../../assets/images/finances.png";
+import phone from "../../assets/images/phoneImg.png";
 import phoneImg from "../../assets/images/phones1.png";
 import useElementOnScreen from "../../utils/useElementOnScreen";
 function Business() {
@@ -66,6 +67,20 @@ function Business() {
         </div>
         <div className="pt-10  align-self-end fade-right " ref={moveleftRight}>
           <img src={financesImg} alt="Finances" className="" />
+        </div>
+      </div>
+      <div className="bg-orange my-10 mx-10 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10 rounded-xl">
+        <div className="align-self-center space-y-10 text-white px-6 sm:px-10 lg:px-20 pt-20">
+          <h5 className="font-black text-2xl sm:text-3xl ">Mobility Budgets</h5>
+          <p className="text-base ">
+            Organizations are now focusing on Total Reward, looking for new
+            methods to improve their employee benefit package. A SawaMobility
+            Budget gives you access to all kinds of transportation and allows
+            you to plan all of your professional and leisure trips.
+          </p>
+        </div>
+        <div className="align-self-end fade-right " ref={moveleftRight}>
+          <img src={phone} alt="Finances" className="" />
         </div>
       </div>
     </div>
