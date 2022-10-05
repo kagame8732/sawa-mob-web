@@ -11,7 +11,6 @@ import "./assets/styles/css/main.css";
 function App() {
   return (
     <Provider store={store}>
-      {" "}
       <BrowserRouter> {renderRoutes(routes)} </BrowserRouter>
     </Provider>
   );

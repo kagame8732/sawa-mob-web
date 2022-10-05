@@ -1,5 +1,4 @@
 import React from "react";
-
 import mapImg from "../../assets/images/map-img.png";
 import searchImg from "../../assets/images/search-img.png";
 import busImg1 from "../../assets/images/bus Rda 2.png";
@@ -27,7 +26,7 @@ function index() {
   return (
     <div>
       <div className="home">
-        <Carousel indicators={true} interval={3000}>
+        {/* <Carousel indicators={true} interval={3000}>
           <Carousel.Item className="w-100">
             <HomeBannerSlider
               message={"Giving you a true freedom of mobility. "}
@@ -52,16 +51,33 @@ function index() {
               phoneImg={phoneImg3}
             />
           </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
+        <div className="md:flex justify-around p-8 mt-4">
+          <div>
+            <h1 className="md:text-black-700 text-3xl font-bold">
+              Transportation Made Easy with one app
+            </h1>
+            <p className="mt-4 text-lg">
+              Creating a simpler, comfortable and affordable way to move around
+              the city.
+            </p>
+            <p className="mt-4 text-lg">
+              Consectetur eiusmod mollit et excepteur ea nisi nisi reprehenderit
+              quis consectetur tempor mollit. Irure cupidatat voluptate tempor
+              offict incididunt.
+            </p>
+            <button className="bg-blue-400 p-2 md:w-1/3 text-white text-lg font-bold mt-8 rounded-full hover:bg-blue-500">
+              Learn More
+            </button>
+          </div>
+          <div></div>
+        </div>
       </div>
       <div className="lg:px-40 px-6 sm:px-10 md:px-20 py-10 space-y-16">
-        {" "}
         <div className="bg-indigo-50 md:flex flex-wrap px-10 lg:space-x-1 relative mt-6 md:mt-0">
-          {/* <div className="flex-1 pt-16 pb-10 space-y-10 px-0.5 sm:px-6 lg:px-0"> */}
           <div className="flex-1 pt-6 pb-6 md:pb-3 space-y-6 md:space-y-10 px-0.5 sm:px-6 lg:px-0">
             <h5 className="text-2xl text-navyblue font-bold">Our Solution</h5>
             <p className="text-bluishgray text-base font-semibold">
-              {" "}
               What if all transportation was converged....
             </p>
           </div>
@@ -72,7 +88,6 @@ function index() {
               className="max-h-44 md:max-h-60  object-cover"
             />
           </div>
-          {/* <div className="flex-1 p-10 md:pt-16 pb-52 text-end md:text-start"> */}
           <div className="flex-1 p-6 md:pt-6 pb-48 sm:pb-6 text-end md:text-start">
             <p className="text-bluishgray text-base font-semibold sm:pr-20 md:pr-0">
               .....and tailored to your need?
@@ -284,7 +299,6 @@ function index() {
               <img
                 src={subtractElipseImg}
                 alt="Phone app"
-                // className="hidden sm:block absolute bottom-0 max-h-56 md:max-h-72 lg:max-h-80 -right-20 md:max-h-52 lg:max-h-64"
                 className="hidden sm:block absolute bottom-0 max-h-56  -right-20 md:max-h-52 lg:max-h-64"
               />
             </div>
@@ -310,7 +324,6 @@ function index() {
           </div>
           <div className="flex flex-wrap justify-around items-center px-6 space-x-3 space-y-4 md:space-y-0">
             <svg
-              // className="w-14"
               className="w-7 h-7 "
               width="67"
               height="56"
@@ -508,7 +521,6 @@ function index() {
         <h5 className="text-darkblack font-bold text-2xl text-center">
           Our Mobility Providers
         </h5>
-
         <MobilepartsSlider />
         <div className=" grid grid-cols-1 md:grid-cols-2 bg-lightdarkblue rounded-2xl ">
           <div className="m-10 text-white">

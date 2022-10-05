@@ -20,6 +20,45 @@ function DefaultMenu() {
       >
         Home
       </NavLink>
+      {/* <NavLink
+        exact
+        to="/membership"
+        className={
+          (location?.pathname === "/"
+            ? " hover:text-darkergray  "
+            : " hover:text-darkergray  ") +
+          " py-3.5 pt-4 font-semibold px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+        }
+        activeClassName=" border-opacity-100 border-lightblue"
+      >
+        Drive & Earn
+      </NavLink> */}
+      <NavLink
+        exact
+        to="/business"
+        className={
+          (location?.pathname === "/"
+            ? " hover:text-darkergray  "
+            : " hover:text-darkergray  ") +
+          " py-3.5 pt-4 font-semibold px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+        }
+        activeClassName=" border-opacity-100 border-lightblue"
+      >
+        For Business
+      </NavLink>
+      {/* <NavLink
+        exact
+        to="/schools"
+        className={
+          (location?.pathname === "/"
+            ? " hover:text-darkergray  "
+            : " hover:text-darkergray  ") +
+          " py-3.5 pt-4 font-semibold px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
+        }
+        activeClassName=" border-opacity-100 border-lightblue"
+      >
+        For schools
+      </NavLink> */}
       <NavLink
         exact
         to="/about"
@@ -32,45 +71,6 @@ function DefaultMenu() {
         activeClassName=" border-opacity-100 border-lightblue"
       >
         About
-      </NavLink>
-      <NavLink
-        exact
-        to="/membership"
-        className={
-          (location?.pathname === "/"
-            ? " hover:text-darkergray  "
-            : " hover:text-darkergray  ") +
-          " py-3.5 pt-4 font-semibold px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
-        }
-        activeClassName=" border-opacity-100 border-lightblue"
-      >
-        Drive & Earn
-      </NavLink>
-      <NavLink
-        exact
-        to="/corporate"
-        className={
-          (location?.pathname === "/"
-            ? " hover:text-darkergray  "
-            : " hover:text-darkergray  ") +
-          " py-3.5 pt-4 font-semibold px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
-        }
-        activeClassName=" border-opacity-100 border-lightblue"
-      >
-        For corporate
-      </NavLink>
-      <NavLink
-        exact
-        to="/schools"
-        className={
-          (location?.pathname === "/"
-            ? " hover:text-darkergray  "
-            : " hover:text-darkergray  ") +
-          " py-3.5 pt-4 font-semibold px-2 text-sm  border-b-4 border-opacity-0  hover:border-lightblue rounded-1"
-        }
-        activeClassName=" border-opacity-100 border-lightblue"
-      >
-        For schools
       </NavLink>
       <NavLink
         exact

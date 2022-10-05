@@ -7,9 +7,10 @@ import Membership from "../pages/Membership";
 import PageNotFound from "../pages/PageNotFound";
 import BusRide from "../pages/RequestRide/BusRide";
 import BikeRide from "../pages/RequestRide/BikeRide";
-import Corporate from "../pages/Corporate";
+import Corporate from "../pages/Business";
 import Schools from "../pages/Schools";
 import Contact from "../pages/Contact";
+import Business from "../pages/Business";
 const routes = [
   {
     component: BlankLayout,
@@ -35,10 +36,10 @@ const routes = [
         component: About,
       },
       {
-        name: "Corporate page",
-        path: "/corporate",
+        name: "N=Business page",
+        path: "/business",
         exact: true,
-        component: Corporate,
+        component: Business,
       },
       {
         name: "Schools page",
